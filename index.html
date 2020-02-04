@@ -39,19 +39,20 @@ layout: default
 </div>
 
 <div class="pagination">
-  {% if paginator.previous_page %}
-    <span class="prev">
-      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="prev">
-        < Previous
-      </a>
-    </span>
-  {% endif %}
   {% if paginator.next_page %}
     <span class="next">
       <a href="{{ site.baseurl}}{{ paginator.next_page_path }}" class="next">
-        Next >
+      <button>< Older Posts</button>
+      </a>
+    </span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    <span class="prev">
+      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="prev">
+        <button>Newer Posts ></button>
       </a>
     </span>
   {% endif %}
 </div>
+<p class="whoami"><strong>I'm Daniel Bernal</strong>.  I write iOS apps and lead the Development team at <a href="http://www.endava.com/">Endava, Bogotá</a><br>More about me.</p>
 

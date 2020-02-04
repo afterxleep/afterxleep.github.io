@@ -482,7 +482,6 @@ article {
   }
 
   > .prev {
-    float: left;
     width: 50%;
     a {
       color: $pagination-color;
@@ -493,7 +492,6 @@ article {
   }
 
   > .next {
-    float: right;
     text-align: right;
     width: 50%;
     a {
@@ -562,6 +560,12 @@ article {
   }
 }
 
+.whoami {
+  font-weight: 200;
+  margin-top:75px;
+  margin-top:50px;
+}
+
 // Footer
 .wrapper-footer {
   margin-top: 50px;
@@ -571,6 +575,11 @@ article {
 footer {
   padding: 20px 0;
   border-top: 1px solid $footer-border-color;
+
+  .madeby {
+    font-weight: 200;
+    font-size: $small-font-size;
+  }
 
   p {
     font-weight: 300;
@@ -605,6 +614,14 @@ footer {
       left: 0;
     }
   }
+}
+
+button {
+  background-color: white;
+  border: 1px solid $blue;
+  color: $blue;
+  font-size: $small-font-size;
+  padding:8px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
