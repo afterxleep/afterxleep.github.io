@@ -416,20 +416,19 @@ article {
     margin-bottom: 0px;
     padding: 12px;
   }
-
-
 }
 
+
+
+.entry {
+  p {
+    color: $gray;
+    font-weight: 300;
+  }
+}
 .post {
   h1 {
     margin-bottom: .1em;
-  }
-
-  .entry {
-    p {
-      color: $gray;
-    }
-
   }
 
   .date {
