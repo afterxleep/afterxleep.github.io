@@ -52,6 +52,7 @@ h1 {
 }
 
 h2 {
+  margin-top: 1em;
   font-size: 24px;
   a {
     color: inherit;
@@ -59,10 +60,12 @@ h2 {
 }
 
 h3 {
+   margin-top: 0.7em;
   font-size: 20px;
 }
 
 h4 {
+  margin-top: 0.5em;
   font-size: 20px;
   color: $base-lighten-color;
 }
