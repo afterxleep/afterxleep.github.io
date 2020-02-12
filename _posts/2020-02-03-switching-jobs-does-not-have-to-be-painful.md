@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: Switching jobs does not have to be painful
 tags:
   - job advice  
@@ -60,9 +61,9 @@ Listen to your gut, but don’t let it cloud your judgment. If you feel there is
 
 ## Embrace that you might regret it
 
-Taking on a new job is always a risk, and it might not go as you expect. If you can’t make it work, something changes along the way or it simply is not what was promised, that’s ok. Don’t blame yourself for it. 
+Taking on a new job is always a risk, and it might not go as you expect. If you can’t make it work, something changes along the way or it simply is not what was promised, that’s ok. Don’t blame yourself for it.
 
-If you did things right in the past there is a big chance the door at your previous employer is still open, but if not, that’s ok too. 
+If you did things right in the past there is a big chance the door at your previous employer is still open, but if not, that’s ok too.
 
 Embracing that you might regret the decision from the start will set you in the correct mindset to calmly take action if that happens.
 
