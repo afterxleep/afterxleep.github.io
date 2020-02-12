@@ -29,11 +29,11 @@ So start going to interviews; get outside of your comfort zone.  Practicing won�
 
 Different things appeal to different people. In my case is mostly about learning and working with smarter people than me. More money is always good, but not the first thing on my list. So grab a piece of paper and write 5 simple things that are important to you (Job-wise), then see how the offer matches against that. Here’s in an example of mine (in random order):
 
-	• Commute to work under 25m or Work from home.
-	• Autonomy to innovate or make things better.
-	• Chance to learn from others, work with smart people.
-	• Chance to work in products; not only services.
-	• Opportunity to mentor and help others grow professionally.
+* Commute to work under 25m or Work from home.
+* Autonomy to innovate or make things better.
+* Chance to learn from others, work with smart people.
+* Chance to work in products; not only services.
+* Opportunity to mentor and help others grow professionally.
 
 Your new offer might not match all the bullets (same as your current job) but putting things on paper will help you compare, compromise on some things, and feel better about the decision, whatever it is.
 
