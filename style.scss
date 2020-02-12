@@ -410,6 +410,11 @@ nav {
   padding-bottom: 2em;
   margin-bottom: 2em;
   border-bottom: 1px solid $divider-color;
+
+  h2 {
+    margin-top: 0;
+  }
+
 }
 
 .posts > .post:last-child {
