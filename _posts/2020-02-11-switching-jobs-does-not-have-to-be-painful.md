@@ -1,4 +1,11 @@
-# Switching jobs doesn’t have to be painful
+---
+layout: post
+title: Switching jobs does not have to be painful
+tags:
+  - job advice  
+---
+
+
 700 days ago, I quit my job at [Globant](http://www.globant.com) to join [Endava](http://www.endava.com) and it’s time to do it again. Most people think that two years is too little to do something (especially on a management role) and therefore the decision comes with lots of noise and questions, but, should it be that way?
 
 I’m 41 years old, and according to ‘social standards on employment’, I should be already thinking about settling down and securing my pension. For many of you that might work out but it simply sounds boring on this side of the screen.
