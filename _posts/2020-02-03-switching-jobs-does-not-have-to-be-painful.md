@@ -36,7 +36,7 @@ Different things appeal to different people. In my case is mostly about learning
 
 Your new offer might not match all the bullets (same as your current job) but putting things on paper will help you compare, compromise on some things, and feel better about the decision, whatever it is.
 
-That dream job only exists in your dreams (and YouTube)
+## That dream job only exists in your dreams (and YouTube)
 
 We see lots of people doing awesome things on the internet. (Traveling the world, adventuring in the jungle, racing F1 cars, piloting rockets, you name it), and we say, wow, that is my dream job. I want to do that!.
 
