@@ -215,7 +215,7 @@ tbody tr:nth-child(odd) th {
 
 // Blockquote
 blockquote {
-  font-weight: 350;
+  font-weight: 400;
   padding: 0 0 0 1.4rem;
   margin: 0 2rem 1rem 0;
   border-left: .2em solid $blockquote-border-color;
@@ -388,7 +388,7 @@ nav {
     margin-left: 20px;
     color: $darkGray;
     text-align: right;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
 
     @include mobile {
@@ -423,7 +423,7 @@ article {
 .entry {
   p {
     color: $gray;
-    font-weight: 350;
+    font-weight: 400;
   }
 }
 .post {
@@ -432,7 +432,7 @@ article {
   }
 
   .date {
-    font-weight: 200;
+    font-weight: 300;
     color: $base-lighten-color;
     margin-right: 3px;
 
@@ -440,7 +440,7 @@ article {
 
   .tag {
     display: inline;
-    font-weight: 350;
+    font-weight: 400;
     font-size: $small-font-size;
 
     li:before {
@@ -471,7 +471,7 @@ article {
 }
 
 .pagination {
-  font-weight: 300;
+  font-weight: 400;
   padding: 2em 0;
   width: 100%;
   display: inline-block;
@@ -510,7 +510,7 @@ article {
   time {
     color: $base-lighten-color;
     font-size: $small-font-size;
-    font-weight: 350;
+    font-weight: 400;
     margin-left: 3px;
   }
 }
@@ -524,7 +524,7 @@ article {
   > li {
     margin: 0;
     font-size: $small-font-size;
-    font-weight: 350;
+    font-weight: 400;
     display: inline;
 
     > a {
@@ -554,13 +554,13 @@ article {
   time {
     color: $base-lighten-color;
     font-size: $small-font-size;
-    font-weight: 350;
+    font-weight: 400;
     margin-left: 3px;
   }
 }
 
 .whoami {
-  font-weight: 200;
+  font-weight: 300;
   margin-top:75px;
   margin-top:50px;
 }
@@ -576,12 +576,12 @@ footer {
   border-top: 1px solid $footer-border-color;
 
   .madeby {
-    font-weight: 200;
+    font-weight: 300;
     font-size: $small-font-size;
   }
 
   p {
-    font-weight: 350;
+    font-weight: 400;
   }
 
   .svg-icon {
