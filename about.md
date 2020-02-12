@@ -4,11 +4,11 @@ title:
 permalink: /about/
 ---
 
-Hi, I'm Daniel Bernal
+**Hi, I'm Daniel Bernal**
 
-I have been writing software since the late 90s and after the iPhone launch in 2007 I was sold to the platform and still in love with Swift.
+I have been writing software since the late 90s and after the iPhone launch in 2007 I fell in love with the platform.  Since then I've been writing iOS apps.
 
-During the day, I lead the Development Team at [Endava](http://www.endava.com), Bogotá, and enjoy Mountain Biking, coffee and speaking at conferences.
+During the day, I lead the Development Team at [Endava](http://www.endava.com), Bogotá, and enjoy Mountain Biking, coffee and ocasionally speaking at conferences.
 
 I'm always available at [Twitter](http://www.twitter.com/afterxleep), and frequently pushing bits to one of my [Github projects](http://github.com/afterxleep).
 

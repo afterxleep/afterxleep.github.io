@@ -53,7 +53,7 @@ The only way to find your dream job is getting hired to do it.
 
 Your “gut feeling” is important. It is a natural mechanism we all have in our brain, designed to drive emotions, memory and basic behavior, including survival decisions. It is designed to help you decide about whether you should “fight or flight” in dangerous situations and put your body at ease or alarm state.
 
-Having a “bad feeling” about something is useful in many situations, like when you avoid waling into an empty dark alley or run away from a group of people running aggressively towards you, but when it comes to making career decisions it might not be the best tool to decide.
+Having a “bad feeling” about something is useful in many situations, like when you avoid walking into an empty dark alley or run away from a group of people running aggressively towards you, but when it comes to making career decisions it might not be the best tool to decide.
 
 There are fewer dangers and no wild animals are trying to eat us alive now, but our ancient lizard brains still drive many of our decisions.  That “bad feeling” you have might be your brain reminding you that you have a comfortable position, switching jobs is an unnecessary risk and pointing out all of the unknowns and commitments you will have to make, so you decide to stay safe as you are now.
 
