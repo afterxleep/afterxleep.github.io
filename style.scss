@@ -215,7 +215,7 @@ tbody tr:nth-child(odd) th {
 
 // Blockquote
 blockquote {
-  font-weight: 300;
+  font-weight: 350;
   padding: 0 0 0 1.4rem;
   margin: 0 2rem 1rem 0;
   border-left: .2em solid $blockquote-border-color;
@@ -423,7 +423,7 @@ article {
 .entry {
   p {
     color: $gray;
-    font-weight: 300;
+    font-weight: 350;
   }
 }
 .post {
@@ -440,7 +440,7 @@ article {
 
   .tag {
     display: inline;
-    font-weight: 300;
+    font-weight: 350;
     font-size: $small-font-size;
 
     li:before {
@@ -510,7 +510,7 @@ article {
   time {
     color: $base-lighten-color;
     font-size: $small-font-size;
-    font-weight: 300;
+    font-weight: 350;
     margin-left: 3px;
   }
 }
@@ -524,7 +524,7 @@ article {
   > li {
     margin: 0;
     font-size: $small-font-size;
-    font-weight: 300;
+    font-weight: 350;
     display: inline;
 
     > a {
@@ -554,7 +554,7 @@ article {
   time {
     color: $base-lighten-color;
     font-size: $small-font-size;
-    font-weight: 300;
+    font-weight: 350;
     margin-left: 3px;
   }
 }
@@ -581,7 +581,7 @@ footer {
   }
 
   p {
-    font-weight: 300;
+    font-weight: 350;
   }
 
   .svg-icon {
