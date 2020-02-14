@@ -6,7 +6,7 @@ tags:
   - updates
 ---
 
-Today is my last day here.
+After two years, today is my last day here.
 
 As in any other job, there were ups and downs; difficult conversations, decisions and problems to solve but also a great number of learning opportunities, challenges, and a handful of new friends.
 
