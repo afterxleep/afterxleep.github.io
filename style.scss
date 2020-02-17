@@ -127,7 +127,7 @@ ol, ul {
       margin-left: -$li-bullets-width;
       display: inline-block;
       box-sizing: border-box;
-      text-align: right;      
+      text-align: right;
     }
   }
 }
@@ -437,6 +437,26 @@ article {
     color: $gray;
     font-weight: 400;
   }
+
+  .excerpt {
+    img {
+      width: 200px;
+      float: left;
+      margin-right: 20px;
+    }
+
+    p:last-child:after {
+      content: '...';
+    }
+  }
+
+  .read-more {
+    a {
+      font-size: $small-font-size;
+    }
+
+  }
+
 }
 .post {
   h1 {

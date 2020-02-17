@@ -28,11 +28,13 @@ layout: default
       <h2>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
       </h2>
-
-
-
       <div class="entry">
-        {{ post.excerpt }}
+        <div class="excerpt">
+          {{ post.excerpt }}
+        </div>
+        <div class="read-more">
+          <a href="{{ site.baseurl }}{{ post.url }}">[more]</a>
+        </div>
       </div>
     </article>
   {% endfor %}

@@ -8,7 +8,7 @@ tags:
 
 After two years, today is my last day here.
 
-As in any other job, there were ups and downs; difficult conversations, decisions and problems to solve but also a great number of learning opportunities, challenges, and a handful of new friends.
+As in any other job, there were ups and downs; difficult conversations, decisions and problems to solve but also a great number of learning opportunities<!--more-->, challenges, and a handful of new friends.
 
 Thank you to the ones that supported me with the cool things, to the ones that challenged me and were always straightforward and direct, and thank you all for teaching me something every day.
 
