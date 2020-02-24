@@ -70,7 +70,7 @@ Embracing that you might regret the decision from the start will set you in the 
 
 --
 
-I hope these are tips help you be more confident when looking into switching jobs and make better decisions over time.  Please leave your comments!
+I hope these tips help you become more confident and make better decisions on your next job hunt.  Please leave your comments!
 
 ---
 
