@@ -12,7 +12,7 @@ tags:
 
 I’m 41 years old, and according to ‘social standards on employment’, I should be already thinking about settling down and securing my pension. For many of you that might work out but it simply sounds boring on this side of the screen.
 
-Except for [Banshai](http://www.banshai.com), which I founded and where I worked for almost 15 years at different intervals, these two years are the longest time I’ve stayed at the same place. Saying that publicly might sound alarming to many, but keep calm and keep reading.
+Except for [Banshai](http://www.banshai.com), which I founded and where I worked for almost 15 years at different intervals, these two years are the longest time I’ve stayed at the same place. Saying that publicly might sound alarming to many, but keep calm and continue reading.
 
 Taking on a new job is not easy, especially when you have obligations in your life (family, kids, parents, house, school, car, loans, etc), and if on top of those, you add several years working with people you trust and doing what you know it might sound like a bad decision.
 
@@ -28,7 +28,7 @@ So start going to interviews; get outside of your comfort zone.  Practicing won�
 
 ## Figure out what motivates you
 
-Different things appeal to different people. In my case is mostly about learning and working with smarter people than me. More money is always good, but not the first thing on my list. So grab a piece of paper and write 5 simple things that are important to you (Job-wise), then see how the offer matches against that. Here’s in an example of mine (in random order):
+Different things appeal to different people. In my case is mostly about learning and working with smarter people than me. More money is always good, but not the first thing on my list. So grab a piece of paper and write 5 simple things that are important to you (Job-wise), then see how the offer matches against that. Here’s an example of mine (in no particular order):
 
 * Commute to work under 25m or Work from home.
 * Autonomy to innovate or make things better.
@@ -54,7 +54,7 @@ The only way to find your dream job is getting hired to do it.
 
 Your “gut feeling” is important. It is a natural mechanism we all have in our brain, designed to drive emotions, memory and basic behavior, including survival decisions. It is designed to help you decide about whether you should “fight or flight” in dangerous situations and put your body at ease or alarm state.
 
-Having a “bad feeling” about something is useful in many situations, like when you avoid walking into an empty dark alley or run away from a group of people running aggressively towards you, but when it comes to making career decisions it might not be the best tool to decide.
+Having a “bad feeling” about something is useful in many situations, like when you avoid walking into an empty dark alley or escape from a group of people running aggressively towards you, but when it comes to making career decisions it might not be the best tool to decide.
 
 There are fewer dangers and no wild animals are trying to eat us alive now, but our ancient lizard brains still drive many of our decisions.  That “bad feeling” you have might be your brain reminding you that you have a comfortable position, switching jobs is an unnecessary risk and pointing out all of the unknowns and commitments you will have to make, so you decide to stay safe as you are now.
 
