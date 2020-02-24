@@ -8,9 +8,9 @@ tags:
 
 ![iOS Development Books](/assets/books.jpeg)
 
-There are thousands of iOS development books flying around but many are outdated, incomplete or simply not the best option (Not to say mediocre), so whether if you are starting with iOS development or want to improve your skills<!--more-->, this is a good place to start.
+There are thousands of iOS development books flying around but many are outdated, incomplete or simply not the best option (not to say mediocre), so whether if you are starting with iOS development or want to improve your skills<!--more-->, this is a good place to start.
 
-This list is not static and I'm always looking for new books about iOS development, so if you please leave any recommendations in the comments.
+This list is not static and I'm always looking for new books about iOS development, so if you have any recommendations, please leave them in the comments section.
 
 ---
 
@@ -22,7 +22,7 @@ Ray Wenderlich’s flagship book is by far the best one for the ones coming to t
 - - - -
 
 ### 2. The Swift Programming Language (Free) — [Beginner]
-Yup, completely free and available online.  This is Apple’s Official Swift documentation is a great resource to get started or update yourself with the latest Swift version for both the stable and upcoming releases.   It is well written, full of examples is always up to date, so don’t ignore it.
+Yup, completely free and available online.  This is Apple’s Official Swift documentation is a great resource to get started or update yourself with the latest Swift version for both the stable and upcoming releases.   It is well written, full of examples is always up to date, so don’t ignore it.  I actually read it all.
 
 [Read online or Download ePub](https://docs.swift.org/swift-book/)
 
@@ -38,21 +38,21 @@ It is meant to teach you everything you need to know to build iOS apps and inclu
 - - - -
 
 ### 4. Swift Algorithms & Data Structures ($39) — [Intermediate]
-If you are thinking about applying to a new job as an iOS developer, this book is a must.  It covers all the standard stuff about algorithms and data structures in Swift 5 and is written to help you pass the Technical interview.  It’s easy to read and comes with example playgrounds to help you sharpen your skills.
+If you are thinking about applying to a new job as an iOS developer, this book is a must.  It covers all the standard stuff about algorithms and data structures in Swift 5 and is written to help you pass the technical interview.  It’s easy to read and comes with example playgrounds (paid separately) to help you sharpen your skills.
 
 [Buy from Wayne's site](https://www.waynewbishop.com/ios-interview/book)
 
 - - - -
 
 ### 5. Advanced iOS App Architecture ($55) — [Intermediate]
-If you are starring to look into architecture patterns for iOS, this book is the perfect starting point.  It covers key concepts such as Dependency injection, factories, and containers, and puts them in practice via simple examples and exercises,  later on, explains MVVM and Redux.
+If you are starring to look into architecture patterns for iOS, this book is the perfect starting point.  It covers key concepts such as Dependency injection, factories, and containers, and puts them in practice via simple examples and exercises, later on, explains MVVM and Redux.
 
 [Buy from Amazon](https://www.amazon.com/Advanced-iOS-App-Architecture-Second/dp/194287894X/ref=sr_1_1?keywords=iOS+architecture&qid=1581980677&s=books&sr=1-1)
 
 - - - -
 
 ### 6. Practical Artificial Intelligence with Swift ($30) — [Intermediate]
-I just discovered this book a couple of days ago and it is an interesting overview of the main things you can do in Swift (and iOS), in relation to CoreML and CreateML.  Exercises and cover the major APIs for Vision, Audio, Language & Language/Text and Motion, and some bits of Tensorflow and integrating Swift and Python together.
+I just discovered this book a week ago and it is an interesting overview of the main things you can do in Swift (and iOS), in relation to CoreML and CreateML.  Exercises and cover the major APIs for Vision, Audio, Language & Language/Text and Motion, some bits of Tensorflow and integrating Swift and Python together.
 
 [Buy from Amazon](https://www.amazon.com/Practical-Artificial-Intelligence-Swift-Fundamental-ebook/dp/B07ZHPPVK3/ref=zg_bs_11006483011_38?_encoding=UTF8&psc=1&refRID=3TM5JYQVRJRZ4JY8SAHV)
 
@@ -76,8 +76,6 @@ These books are not available yet, but look very promising, so it might be worth
 
 ### Hands-on Augmented Reality with ARKit ($45)
 I have not found a good ARKit book yet.  Most books out there are compilations of tutorials without much depth.  This book by Packt promises to break that trend as a more structured, but practical guide.  It’s available for pre-order from Amazon.
-
-ARKit Hands-on Augmented reality
 
 [Pre-order from Amazon](https://www.amazon.com/dp/1788471016/ref=cm_sw_r_cp_api_i_p5XsEbT81BH54)
 
