@@ -34,10 +34,11 @@ layout: default
           <img src="/assets/{{post.image}}" />
           {% endif %}
           {{ post.excerpt }}
+          <span class="read-more">
+            <a href="{{ site.baseurl }}{{ post.url }}">[more]</a>
+          </span>
         </div>
-        <div class="read-more">
-          <a href="{{ site.baseurl }}{{ post.url }}">[more]</a>
-        </div>
+
       </div>
     </article>
   {% endfor %}
