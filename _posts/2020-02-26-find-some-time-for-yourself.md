@@ -2,11 +2,10 @@
 layout: post
 comments: true
 title: Find some time for yourself
+image: time-for-yourself.jpeg
 tags:
   - lifehacks
 ---
-
-![Time for yourself](/assets/time-for-yourself.jpeg)
 
 There is nothing better than giving yourself time not to do anything so that you can do a bunch of things without obligation.
 

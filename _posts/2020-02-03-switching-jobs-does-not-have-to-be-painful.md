@@ -2,11 +2,10 @@
 layout: post
 comments: true
 title: Switching jobs does not have to be painful
+image: this-must-be-the-place.jpg
 tags:
   - job advice  
 ---
-
-![This must be the place](/assets/this-must-be-the-place.jpg)
 
 700 days ago, I quit my job at [Globant](http://www.globant.com) to join [Endava](http://www.endava.com) and it’s time to do it again.  Most people think that two years is too little to do something (especially on a management role) and therefore the decision comes with lots of noise and questions<!--more-->, but, should it be that way?
 
