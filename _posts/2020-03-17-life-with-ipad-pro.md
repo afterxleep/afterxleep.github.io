@@ -67,7 +67,7 @@ It is a potent text editor supporting syntax highlighting for 80+ languages and 
 
 [[Get Textastic ](https://www.textasticapp.com)]
 
-## Kindle [Free & Free]
+## Kindle & Pocket [Free & Free]
 I heavily use my iPad for reading and studying, and these two are my go-to apps.  Although I own a Kindle, which I use for leisure reading, I have most of my reference books on the Kindle app, a couple of taps away, and use Pocket to capture articles, videos, and other entertaining stuff during the day and read them later.  Both apps sync perfectly across devices.
 
 Pocket also has a premium version that allows you to read your entire collection offline and create a permanent archive of your stuff, but I don’t use it.
