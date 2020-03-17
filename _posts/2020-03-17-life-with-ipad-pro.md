@@ -15,7 +15,7 @@ Four months later,  I have not missed my laptop at all.  It took me a while to f
 
 I never imagined this would happen when I started to write apps for the Apple ecosystem in 2008, or 2 years later, when the iPad was released. These things were dumb content consumption devices, barely good enough to get the news, scroll through Facebook, or send a couple of emails. They were toys, not tools.
 
-Things have changed, and my iPad Pro is slowly becoming my computing device of choice for regular tasks.  It’s light, practical, fast, battery life is impressive (lasts a full day), and except for “serious” coding, I can do everything with it.  
+Things have changed, and my iPad Pro is slowly becoming my computing device of choice for regular tasks.  It’s light, practical, fast, battery life is impressive (lasts a full day), the keyboard and display are great, and except for “serious” coding, I can do everything with it.  
 
 Today is a great time to buy an iPad, but I found that to get the most out of it, you will need a good set of companion apps.  Here is my list for 2020.
 
