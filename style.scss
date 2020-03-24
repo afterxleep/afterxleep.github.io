@@ -420,7 +420,6 @@ nav {
 
 .posts > .post:last-child {
   padding-bottom: 1em;
-  border-bottom: none;
 }
 
 article {
@@ -668,10 +667,12 @@ footer {
 
 button {
   background-color: white;
-  border: 1px solid $blue;
+  border: 0.7px solid $blue;
   color: $blue;
   font-size: $small-font-size;
   padding:8px;
+  border-radius: 8px;
+  font-weight: 300;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
