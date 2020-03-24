@@ -407,12 +407,13 @@ nav {
 
 // Posts
 .posts > .post {
-  padding-bottom: 2em;
-  margin-bottom: 2em;
+  padding-bottom: 1.5em;
+  margin-bottom: 1.5em;
   border-bottom: 1px solid $divider-color;
 
   h2 {
     margin-top: 0;
+    margin-bottom: 0.5em;
   }
 
 }
@@ -431,7 +432,8 @@ article {
 }
 
 .header-image {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
+  margin-top:25px;
 }
 
 .entry {
@@ -441,31 +443,30 @@ article {
     color: $gray;
   }
 
-  img {
-    margin-bottom:35px;
-  }
-
   .excerpt {
     min-height: 150px;
+    margin-top: 0px;
+
+    img {
+      width: 200px;
+      float: left;
+      margin-right: 20px;
+      @include mobile {
+        width: 100%;
+      }
+    }
 
     p {
       font-size: $base-font-size;
       &:last-of-type:after {
         content: '...'
       }
-    }
-
-
-    img {
-      width: 200px;
-      float: left;
-      margin-right: 20px;
-
-
-      @include mobile {
-        width: 100%;
+      &:first-of-type {
+        margin-top:0;
       }
     }
+
+
   }
 
   .read-more {
@@ -486,12 +487,6 @@ article {
     color: $base-lighten-color;
     margin-right: 3px;
     font-size: $regular-font-size;
-  }
-
-  .excerpt-date {
-    font-size: $small-font-size;
-    font-weight: 300;
-    color: $base-lighten-color;
   }
 
   .tag {
