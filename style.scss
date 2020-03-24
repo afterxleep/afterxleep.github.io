@@ -437,8 +437,8 @@ article {
 .entry {
 
   p {
+    font-weight: normal;
     color: $gray;
-    font-weight: 400;
   }
 
   img {
@@ -449,6 +449,7 @@ article {
     min-height: 150px;
 
     p {
+      font-size: $base-font-size;
       &:last-of-type:after {
         content: '...'
       }
@@ -484,7 +485,13 @@ article {
     font-weight: 300;
     color: $base-lighten-color;
     margin-right: 3px;
+    font-size: $regular-font-size;
+  }
 
+  .excerpt-date {
+    font-size: $small-font-size;
+    font-weight: 300;
+    color: $base-lighten-color;
   }
 
   .tag {

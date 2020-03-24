@@ -17,16 +17,18 @@ $white: #fff;
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$lato: 'Lato', sans-serif;
 $georgia: Georgia, serif;
 
 // Fonts
 //$base-font: 'Spoqa Han Sans', 'Source Sans Pro', 'Apple SD Gothic Neo', 'Nanum Barun Gothic', 'Nanum Gothic', 'Verdana', 'Arial', 'Dotum', sans-serif;
-$base-font: $helveticaNeue;
+$base-font: $lato;
 $code-font: 'Menlo', 'Courier New', 'Monaco', 'Spoqa Han Sans', monospace;
 
 // Font sizes
 $base-font-size: 16px;
-$small-font-size: 12px;
+$regular-font-size: 14px;
+$small-font-size: 13px;
 $very-small-font-size: 11px;
 
 // Colors
