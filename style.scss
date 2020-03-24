@@ -448,6 +448,13 @@ article {
   .excerpt {
     min-height: 150px;
 
+    p {
+      &:last-of-type:after {
+        content: '...'
+      }
+    }
+
+
     img {
       width: 200px;
       float: left;
@@ -457,10 +464,6 @@ article {
       @include mobile {
         width: 100%;
       }
-    }
-
-    p:last-child:after {
-      content: '...';
     }
   }
 
