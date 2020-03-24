@@ -9,7 +9,7 @@ tags:
 
 It's nice to see everyone trying to help and do something about this virus, but I honestly don't think we can change much by posting more stuff on social networks.
 
-Now is the time when we need our governments, doctors, and scientists doing <!--more-->their best work ever, so let's cut the shit, the noise, and the narcissism and let them focus on their work.
+Now is the time when we need our governments, doctors, and scientists doing <!--more-->their best work ever, so let's cut the shit, the noise, and the narcissism and let them focus on the job.
 
 The best way to help is to keep doing our work, whatever it is, in the best way possible. We need to stop checking our newsfeed every five minutes and companies need to stop trying to leverage this as a marketing opportunity. Fuck all that.
 
