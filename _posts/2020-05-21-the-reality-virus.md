@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: The reality virus
-image:
+image: video-call.jpg
 tags:
   - untagged
 ---
@@ -14,3 +14,6 @@ On video calls, CEOs are no longer shaving every day, sales VPs join calls on sw
 It's amazing how, without the fanciness and makeup, everyone looks and sounds more real, honest, and down to earth, and people are suddenly more open and willing to share, yet still, the world keeps moving forward as it should.
 
 While COVID will eventually subside, I hope this new reality virus stays with us for a long time.
+
+---
+Photo by [Chris Montgomery](https://unsplash.com/@cwmonty) on Unsplash
