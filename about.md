@@ -6,9 +6,9 @@ permalink: /about/
 
 **Hi, I'm Daniel Bernal**
 
-I have been writing software since the late 90s and after the iPhone launch in 2007 I fell in love with the platform.  Since then I've been writing iOS apps.
+I have been writing software since the late 90s and after the iPhone launch in 2007 I fell in love with the platform.  Since then I've been writing iOS apps most of the time.
 
-During the day, I lead the Development Team at [Endava](http://www.endava.com), Bogotá, and enjoy Mountain Biking, coffee and ocasionally speaking at conferences.
+During the day, I consult as Product & Development Director for <i>Appetit</i>, a startup that I founded in 2017 and go out for mid-day Mountain Bike rides, and at night, I take on cool mobile freelance gigs.
 
 I'm always available at [Twitter](http://www.twitter.com/afterxleep), and frequently pushing bits to one of my [Github projects](http://github.com/afterxleep).
 
