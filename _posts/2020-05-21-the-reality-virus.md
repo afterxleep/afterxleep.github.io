@@ -16,4 +16,4 @@ It's amazing how, without the fanciness and makeup, everyone looks and sounds mo
 While COVID will eventually subside, I hope this new reality virus stays with us for a long time.
 
 ---
-Photo by [Chris Montgomery](https://unsplash.com/@cwmonty) on Unsplash
+Photo thanks to [Chris Montgomery](https://unsplash.com/@cwmonty)
