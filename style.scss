@@ -443,7 +443,7 @@ article {
   }
 
   .excerpt {
-    min-height: 150px;
+    min-height: 200px;
     margin-top: 0px;
 
     img {
@@ -456,7 +456,6 @@ article {
     }
 
     p {
-      margin-left: 225px;
       font-size: $base-font-size;
       &:last-of-type:after {
         content: '...'
