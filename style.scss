@@ -443,11 +443,11 @@ article {
   }
 
   .excerpt {
-    min-height: 200px;
+    min-height: 150px;
     margin-top: 0px;
 
     img {
-      width: 250px;
+      width: 220px;
       float: left;
       margin-right: 20px;
       @include mobile {
@@ -456,7 +456,7 @@ article {
     }
 
     p {
-      font-size: $base-font-size;
+      font-size: $regular-font-size;
       &:last-of-type:after {
         content: '...'
       }
