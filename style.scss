@@ -21,12 +21,12 @@ html {
 body {
   font-family: $base-font;
   color: $base-color;
-  line-height: 1.7;
+  line-height: $line-height;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 780px;
   padding: 0 10px;
   width: 100%;
 
@@ -36,11 +36,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.7;
+  line-height: $header-line-height;
   padding: 0;
 
   @include mobile {
-    line-height: 1.4;
+    line-height: $header-line-height-mobile;
   }
 }
 
@@ -438,8 +438,9 @@ article {
 .entry {
 
   p {
-    font-weight: normal;
+    font-weight: 300;
     color: $darkGray;
+    line-height: $line-height;
   }
 
   .excerpt {
@@ -447,7 +448,7 @@ article {
     margin-top: 0px;
 
     img {
-      width: 220px;
+      width: 240px;
       float: left;
       margin-right: 20px;
       @include mobile {
@@ -458,7 +459,8 @@ article {
     p {
       font-size: $regular-font-size;
       &:last-of-type:after {
-        content: '...'
+        content: '...';
+        margin-bottom:0;
       }
       &:first-of-type {
         margin-top:0;

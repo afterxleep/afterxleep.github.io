@@ -30,10 +30,13 @@ $base-font-size: 19px;
 $regular-font-size: 17px;
 $small-font-size: 13px;
 $very-small-font-size: 11px;
+$line-height: 32px;
+$header-line-height: 32px;
+$header-line-height-mobile: 28px;
 
 // Colors
-$base-color: $darkerGray;
-$base-lighten-color: $darkGray;
+$base-color: $black;
+$base-lighten-color: $gray;
 
 $text-color: $base-color;
 $link-color: $oc-blue-8;
