@@ -439,13 +439,12 @@ article {
 
   p {
     font-weight: normal;
-    color: $gray;
+    color: $darkGray;
   }
 
   .excerpt {
     min-height: 150px;
     margin-top: 0px;
-    margin-left: 225px;
 
     img {
       width: 225px;
@@ -457,6 +456,7 @@ article {
     }
 
     p {
+      margin-left: 225px;
       font-size: $base-font-size;
       &:last-of-type:after {
         content: '...'
