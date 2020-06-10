@@ -53,7 +53,7 @@ Guide them on relevant documentation, additional information that might be requi
 ## Promote togetherness
 In addition to choosing interns with the right cultural fit, you should promote togetherness.  Encourage your mentees to participate in events, team building activities, company meetings, and getaways.  Go out for lunch or a beer from time to time.
 
-Hackathons, for example, are great to connect and promote technical excellence as you get to level the playing field while encouraging creativity.  Invite your mentees to participate as part of your team to generate achievement-oriented relationships and increase their opportunities to showcase their skills and learn from your team members.
+Hackathons, for example, are great to connect and promote technical excellence as you get to level the playing field while encouraging creativity.  Invite interns to participate as part of your team to generate achievement-oriented relationships and increase their opportunities to showcase their skills and learn from your team members.
 
 ## And finally, set up one on ones
 By following the above recommendations, you will build an open, transparent communication path with your mentees. Still, it is also essential to create specific situations to connect while answering questions and giving advice.
