@@ -56,9 +56,9 @@ In addition to choosing interns with the right cultural fit, you should promote 
 Hackathons, for example, are great to connect and promote technical excellence as you get to level the playing field while encouraging creativity.  Invite your mentees to participate as part of your team to generate achievement-oriented relationships and increase their opportunities to showcase their skills and learn from your team members.
 
 ## And finally, set up one on ones
-By following the above recommendations, you will build an open, transparent communication path with your mentee. Still, it is also essential to create specific situations to connect while answering questions and giving advice.
+By following the above recommendations, you will build an open, transparent communication path with your mentees. Still, it is also essential to create specific situations to connect while answering questions and giving advice.
 
-By putting a one on one meeting with your mentees at least once a week, and asking them to come up with questions, comments or ideas, you will create a safe space to develop trust and build a transparent relationship.
+Setting up one on one meeting at least once a week, and asking your mentees to come up with questions, comments, or ideas, creates a safe space to develop trust and build a transparent relationship.
 
 One on one meetings are the best place to provide feedback.  Be honest, direct when doing so, reflect on how things are progressing, and always make sure to recognize their work and effort when recognition is due.
 
