@@ -129,7 +129,7 @@ The error is reminding us what I was mentioning at the beginning: Wrappers and S
 ## The Solution
 Before doing the fix, let's talk about the @Published wrapper.
 
-In essence, a property wrapper is a type that wraps a value and attaches some logic to it.   When a property has a @Published wrapper, some invisible logic is attached to it in order to automatically publish its value is published anytime it changes.  More explicitly in during the *willSet* block.
+In essence, a property wrapper is a type that wraps a value and attaches some logic to it.   When a property has a @Published wrapper, some invisible logic is attached to it in order to automatically publish its value anytime it changes.  In this case, it happens explicitly during the *willSet* block execution..
 
 In simple terms, @Published creates a publisher that can be accessed with the *'$'* operator (as we do in our ViewModel), allowing any subscriber to get its value whenever it changes in the future.
 
