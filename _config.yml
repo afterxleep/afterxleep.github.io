@@ -109,3 +109,5 @@ excerpt_separator: <!--more-->
 
 future: false
 
+highlighter: rouge
+
