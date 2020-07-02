@@ -7,12 +7,14 @@ tags:
   - development ios swift
 ---
 
-The [@ObservableObject](https://www.hackingwithswift.com/quick-start/swiftui/what-is-the-published-property-wrapper) property wrapper is the cornerstone of Combine powered apps. Still, everything works great until you decide to use Protocols and  [Protocol Oriented Programming](https://developer.apple.com/videos/play/wwdc2016/419/) to facilitate dependency injection and testing of your Models<!--more--> and ViewModel classes, as we've been doing in our regular MVVM apps for years.
+The [@ObservableObject and @Published](https://www.hackingwithswift.com/quick-start/swiftui/what-is-the-published-property-wrapper) property wrappers are the cornerstone of Combine powered apps. With Combine and SwiftUI, it's easy to use the @Published wrapper in our ViewModels/Presenters and have the Views automatically update as changes to these properties happen.
 
-With Combine, it's easy to use the @Published Property and subscribe to changes as they happen, but as of today (Swift 5.3), you cannot use it as part of a protocol definition.
+Everything works great until you want to use Protocols to facilitate dependency injection and testing in your Models <!--more--> and ViewModel classes, as we've been doing in our regular MVVM apps for the past few years,
+
+You will soon discover that Swift (As of now, version 5.3) does not support property wrappers in Protocol declarations, and marking a property as @Published in a protocol will throw an error.
 
 ## The Problem
-To explain the issue, let's start with a new Playground and use Combine and SwiftUI to write a demo app following the MVVM pattern.  It will consist of three components.
+To explain the issue, we will use a Playground to write a quick demo app using Combine and SwiftUI and following the MVVM pattern.  It will consist of three components
 
 ### AnimalGenerator
 This is our Model.  It holds a list of animal names and has has a method to publish one random animal name via a Publisher.  *(@Published private(set) var name)*
