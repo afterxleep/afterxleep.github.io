@@ -14,7 +14,7 @@ Everything works great until you want to use Protocols to facilitate dependency 
 You will soon discover that Swift (As of now, version 5.3) does not support property wrappers in Protocol declarations, and marking a property as @Published in a protocol will throw an error.
 
 ## The Problem
-To explain the issue, we will use a Playground to write a quick demo app using Combine and SwiftUI and following the MVVM pattern.  It will consist of three components
+To explain the issue, we will use a Playground to write a quick demo app using Combine and SwiftUI, following the MVVM pattern.  It will consist of three components
 
 ### AnimalGenerator
 This is our Model.  It holds a list of animal names and has has a method to publish one random animal name via a Publisher.  *(@Published private(set) var name)*
