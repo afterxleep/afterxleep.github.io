@@ -18,6 +18,10 @@ To explain the issue, we will use a Playground to write a quick demo app using C
 
 #### Here's the Code
 ```swift
+import PlaygroundSupport
+import SwiftUI
+import Combine
+
 class AnimalGenerator: ObservableObject {
 
      @Published private(set) var name: String = ""
@@ -68,7 +72,10 @@ struct TheView: View {
 PlaygroundPage.current.setLiveView(TheView())
 ```
 
-### Our three components:
+#### And voilá. Here is the result
+<img src="/assets/posts/2020-07-01-combine-and-protocols-in-swift/demo.gif" width="400">
+
+### The components:
 
 #### AnimalGenerator
 This is our Model.  It holds a list of animal names and has a method to publish one random animal name via a Publisher.  *(@Published private(set) var name)*
