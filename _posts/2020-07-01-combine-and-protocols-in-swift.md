@@ -154,10 +154,10 @@ protocol Generator {
 ```swift
 class AnimalGenerator: Generator, ObservableObject {
 
+    @Published private(set) var name: String = ""
     var namePublished: Published<String> { _name }
     var namePublisher: Published<String>.Publisher { $name }
 
-     @Published private(set) var name: String = ""
      let animals = ["Cat", "Dog", "Crow", "Horse", "Iguana", "Cow", "Racoon"]
 
     init() {
@@ -221,7 +221,7 @@ It works, but it does not look good, as we are now coupling the View, ViewModel 
 
 First, let's update our View and remove the initialization for the ViewModel.
 
-#### And the final version
+#### The final version
 ```swift
 struct TheView: View {
 
@@ -238,7 +238,7 @@ struct TheView: View {
 
 And then, we can simply instantiate our Model and ViewModel and pass them to the View like this.
 
-#### Instantiating our Model and Viewmodel together
+#### Instantiating and injecting our ViewModel
 ```swift
 let viewModel: TheViewModel = TheViewModel(generator: AnimalGenerator())
 
@@ -285,8 +285,8 @@ Using @StateObject is then particularly useful when you are instantiating your V
 ## Conclusion
 As you can see, it is reasonably straightforward to use Combine and still maintain polymorphic interfaces via Protocol Oriented Programming in your classes.
 
-Some would say that the next step would be decoupling the View itself to become completely ignorant of it's ViewModel and use a Protocol instead, especially if you are still stuck with UIKit and UIViewControllers. Nevertheless, in this case, I find it overkill.   Maybe we can cover that in another post.
+Some would say that the next step would be decoupling the View itself to become completely ignorant of it's ViewModel and use a Protocol instead.  Yes, it can be done, but heads up, it's tricky. Nevertheless, in this case, I find it overkill.   Maybe we can cover that in another post.
 
-The final example is available [here](https://gist.github.com/afterxleep/2246e5a38ea3704b9f9b866a106b8d8f), so go ahead, paste it on a Playground and send over your comments and suggestions.
+The final example is available [here](https://gist.github.com/afterxleep/2246e5a38ea3704b9f9b866a106b8d8f).  Go ahead, paste it on a Playground and send over your comments and suggestions.
 
 
