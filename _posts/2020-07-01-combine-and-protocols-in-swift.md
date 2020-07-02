@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Combine and Protocols in Swift - Defining Protocols with a @Published property wrapper
-image: /posts/2020-07-1-combine-and-protocols-in-swift/header.jpg
+image: /posts/2020-07-01-combine-and-protocols-in-swift/header.jpg
 tags:
   - development ios swift
 ---
