@@ -84,7 +84,7 @@ This is our Model.  It holds a list of animal names and has a method to publish 
 Our ViewModel, responsible for managing the View.  It owns our Model, subscribes to it and then re-publishes *name* via its *displayData* publisher. *(@Published var textToShow).*
 
 #### TheView
-This is a simple SwiftUI View, with a text and a button.  It owns our ViewModel and subscribes to it.  It displays the ViewModel's *displayData* value as a Text whenever the data changes.
+For the sake of simplicity we are using a SwiftUI View with a text and a button.  It owns our ViewModel and subscribes to it.  It displays the ViewModel's *displayData* value as a Text whenever the data changes.
 
 When you tap the button, it calls the generate() method in the ViewModel.  The ViewModel calls the same method in our Model and Combine takes cares of publishing the changes.
 
