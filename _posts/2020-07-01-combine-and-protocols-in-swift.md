@@ -120,7 +120,7 @@ class AnimalGenerator: Generator, ObservableObject {
 
 #### And here's the error (Oops!)
 
-![Property declared inside a protocol cannot have a wrapper](/assets/posts/2020-07-01-combine-and-protocols-in-swift/wrapper-error.png)
+![](/assets/posts/2020-07-01-combine-and-protocols-in-swift/wrapper-error.png)
 `Property declared inside a protocol cannot have a wrapper.`
 
 The error is reminding us what I was mentioning at the beginning: Wrappers and Stored properties are not allowed in Swift protocols and extensions (at least for now).
@@ -129,11 +129,11 @@ The error is reminding us what I was mentioning at the beginning: Wrappers and S
 ## The Solution
 Before doing the fix, let's talk about the @Published wrapper.
 
-In essence, a property wrapper is a type that wraps a value and attaches some logic to it.   When a property has a @Published wrapper, specific logic is attached to it, so its value is published anytime it changes.  More explicitly in during the *willSet* block.
+In essence, a property wrapper is a type that wraps a value and attaches some logic to it.   When a property has a @Published wrapper, some invisible logic is attached to it in order to automatically publish its value is published anytime it changes.  More explicitly in during the *willSet* block.
 
-In simple terms, @Published creates a publisher that can be accessed with the *'$'* operator as we are doing in our ViewModel, allowing us access to its value whenever it changes in the future.
+In simple terms, @Published creates a publisher that can be accessed with the *'$'* operator (as we do in our ViewModel), allowing any subscriber to get its value whenever it changes in the future.
 
-Since we cannot use a @Published wrapper as part of our protocol declaration, we need to describe its synthesized methods explicitly. Let's change our Generator protocol and AnimalGenerator Model to the following.
+Since we cannot use a @Published wrapper as part of our protocol declaration, we need to describe its synthesized methods explicitly, so Let's add them to our Generator protocol and AnimalGenerator Model.
 
 #### Our Updated Protocol
 ```swift
@@ -170,7 +170,7 @@ class AnimalGenerator: Generator, ObservableObject {
 }
 ```
 
-We have now manually defined our Publisher in the Protocol declaration, and exposed both the Publisher (*namePublisher*) and the Published property (*namePubished*) in the Model, and can now create a subscription.
+We have now manually defined our Publisher in the Protocol declaration (namePublisher), and exposed both the Publisher (*namePublisher*) and the Published property (*namePubished*) in the Model.  Now let's update the subscription in the ViewModel
 
 #### Our Updated ViewModel
 ```swift
