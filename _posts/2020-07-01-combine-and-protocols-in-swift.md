@@ -111,7 +111,7 @@ class AnimalGenerator: Generator, ObservableObject {
 
 #### And the expected error (Oops!)
 
-![Property declared inside a protocol cannot have a wrapper](/assets/posts/2020-07-1-combine-and-protocols-in-swift/wrapper-error.png)
+![Property declared inside a protocol cannot have a wrapper](/assets/posts/2020-07-01-combine-and-protocols-in-swift/wrapper-error.png)
 `Property declared inside a protocol cannot have a wrapper.`
 
 The error is reminding us what I was mentioning at the beginning: Wrappers and Stored properties are not allowed in Swift protocols and extensions (at least for now).
