@@ -12,4 +12,4 @@ During the day, I consult as Product & Development Director for <i>Appetit</i>, 
 
 I'm always available at [Twitter](http://www.twitter.com/afterxleep), and frequently pushing bits to one of my [Github repos](http://github.com/afterxleep).
 
-For more serious stuff, you can always find me on [LinkedIn](http://linkedin.com/in/danielbernalm) or email at <a href="#">yo@this_website_url.</a>
+For more serious stuff, you can always find me on [LinkedIn](http://linkedin.com/in/danielbernalm) or <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#121;&#111;&#64;&#100;&#97;&#110;&#105;&#101;&#108;&#98;&#101;&#114;&#110;&#97;&#108;&#46;&#99;&#111;">&#69;&#109;&#97;&#105;&#108;</a>
