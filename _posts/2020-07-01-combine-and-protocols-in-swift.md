@@ -86,7 +86,7 @@ Our ViewModel, responsible for managing the View.  It owns our Model, subscribes
 #### TheView
 This is a simple SwiftUI View, with a text and a button.  It owns our ViewModel and subscribes to it.  It displays the ViewModel's *displayData* value as a Text whenever the data changes.
 
-When you tap the button, it calls the generate() method in the ViewModel, that does the same in the Model, and then Combine does the rest.
+When you tap the button, it calls the generate() method in the ViewModel.  The ViewModel calls the same method in our Model and Combine takes cares of publishing the changes.
 
 ### And Where is the Protocol?
 As you can see, everything works, but let's say that instead of instantiating AnimalGenerator in our ViewModel, we want to use a Protocol as a blueprint for different models, depending on what type of content we want to generate and display in the View.
