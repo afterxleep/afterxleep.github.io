@@ -89,7 +89,7 @@ For the sake of simplicity we are using a SwiftUI View with a text and a button.
 When you tap the button, it calls the generate() method in the ViewModel.  The ViewModel calls the same method in our Model and Combine takes cares of publishing the changes.
 
 ### And Where is the Protocol?
-Everything works so far, but what if instead of instantiating AnimalGenerator in our ViewModel, we want to use a Protocol as a blueprint and use different models to generate different data, load it from the web or simply write a mock.  This is when Protocol Oriented Programming shines.
+Everything works so far, but what if instead of instantiating AnimalGenerator in our ViewModel, we want to use a Protocol as a blueprint to different models with different data generators.  This is when Protocol Oriented Programming shines.
 
 Let's write a simple protocol called "Generator" and update our "AnimalGenerator" class to conform.
 
