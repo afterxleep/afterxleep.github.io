@@ -7,10 +7,10 @@ tags:
   - development ios swift
 ---
 
-The [@ObservableObject and @Published](https://www.hackingwithswift.com/quick-start/swiftui/what-is-the-published-property-wrapper) property wrappers are the cornerstone of Combine powered apps. With Combine and SwiftUI, it's easy to use the @Published wrapper in our ViewModels/Presenters and have the Views automatically update as changes to these properties happen.
+The [@ObservableObject and @Published](https://www.hackingwithswift.com/quick-start/swiftui/what-is-the-published-property-wrapper) property wrappers are the cornerstone of Combine powered apps. With Combine and SwiftUI, it's easy to use the @Published wrapper in our ViewModel properties and have the Views automatically update as changes to these happen.
 
-Everything works great until you want to use Protocols to facilitate dependency injection and testing in your Models <!--more--> and ViewModel classes, as we've been doing in our regular MVVM apps for the past few years,
-
+Everything works great until you want to use Protocols to facilitate dependency injection and testing in your Models and ViewModel classes, as we've been doing in our regular MVVM apps for the past few years.
+<!--more-->
 You will soon discover that Swift (As of now, version 5.3) does not support property wrappers in Protocol declarations, and marking a property as @Published in a protocol will throw an error.
 
 ## The Problem

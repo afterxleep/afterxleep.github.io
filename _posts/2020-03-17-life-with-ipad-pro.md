@@ -9,9 +9,9 @@ tags:
 
 Some time ago, as an experiment, I decided to use an iPad Pro as my primary computing device.  Expectations were low, so I kept my laptop in a drawer and gave it a chance for a couple of weeks.
 
-Working on an iPad seemed ingenious and weird, and several people<!--more--> asked about how I was supposed to write code or do actual work on “that thing,” to which I replied, “I have no idea.”
+Working on an iPad seemed ingenious and weird, and several people asked about how I was supposed to write code or do actual work on “that thing,” to which I replied, “I have no idea.”
 
-Four months later,  I have not missed my laptop at all.  It took me a while to find the right apps and reinvent habits and patterns acquired from 25+ years of computer use, but except for particular situations where I needed to do serious coding work, I have not missed it at all.
+Four months later,  I have not missed my laptop at all<!--more--> .  It took me a while to find the right apps and reinvent habits and patterns acquired from 25+ years of computer use, but except for particular situations where I needed to do serious coding work, I have not missed it at all.
 
 I never imagined this would happen when I started to write apps for the Apple ecosystem in 2008, or 2 years later, when the iPad was released. These things were dumb content consumption devices, barely good enough to get the news, scroll through Facebook, or send a couple of emails. They were toys, not tools.
 

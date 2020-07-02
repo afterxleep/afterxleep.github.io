@@ -7,8 +7,8 @@ tags:
   - management software  
 ---
 
-So the company decided to run a new internship program, and you are now a mentor for the next batch. That's good news, but whether you are new to engineering management or have some experience<!--more--> already, mentoring and motivating interns is not an easy task.
-
+So the company decided to run a new internship program, and you are now a mentor for the next batch. That's good news, but whether you are new to engineering management or have some experience already, mentoring and motivating interns is not an easy task.
+<!--more-->
 Building a successful internship program is hard.  On the one hand, you need to find the right talent, and on the other, you need help them succeed, gain experience and potentially hire them as full-time employees.
 
 This post is the first of a series, where we will be going over tips and strategies to consider when leading and mentoring an Engineering team, starting with, you guessed, Interns. Let's get to work.
