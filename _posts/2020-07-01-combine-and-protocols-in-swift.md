@@ -14,21 +14,9 @@ Everything works great until you want to use Protocols to facilitate dependency 
 You will soon discover that Swift (As of now, version 5.3) does not support property wrappers in Protocol declarations, and marking a property as @Published in a protocol will throw an error.
 
 ## The Problem
-To explain the issue, we will use a Playground to write a quick demo app using Combine and SwiftUI, following the MVVM pattern.  It will consist of three components
+To explain the issue, we will use a Playground to write a quick demo app using Combine and SwiftUI, following the MVVM pattern.  It will consist of three components. (You guessed: Model, ViewModel and View)
 
-### AnimalGenerator
-This is our Model.  It holds a list of animal names and has has a method to publish one random animal name via a Publisher.  *(@Published private(set) var name)*
-
-### TheViewModel
-Our ViewModel, responsible for managing the View.  It owns our Model, subscribes to it and then re-publishes *name* via its *textToShow* publisher. *(@Published var textToShow).*
-
-### TheView
-This is a simple SwiftUI View, with a text and a button.  It owns our ViewModel and subscribes to it.  It displays the ViewModel's *textToShow* value as a Text whenever the data changes.
-
-When you tap the button, it calls the generate() method in the ViewModel, that does the same in the Model, and then Combine does the rest.
-
-
-#### Initial Code
+#### Here's the Code
 ```swift
 class AnimalGenerator: ObservableObject {
 
@@ -80,7 +68,21 @@ struct TheView: View {
 PlaygroundPage.current.setLiveView(TheView())
 ```
 
-As you can see, everything works, but now let's say that instead of instantiating AnimalGenerator in our ViewModel, we want to use a protocol, and use different models, depending on what type of content we want to generate and display in the View.
+### Our three components:
+
+#### AnimalGenerator
+This is our Model.  It holds a list of animal names and has a method to publish one random animal name via a Publisher.  *(@Published private(set) var name)*
+
+#### TheViewModel
+Our ViewModel, responsible for managing the View.  It owns our Model, subscribes to it and then re-publishes *name* via its *textToShow* publisher. *(@Published var textToShow).*
+
+#### TheView
+This is a simple SwiftUI View, with a text and a button.  It owns our ViewModel and subscribes to it.  It displays the ViewModel's *textToShow* value as a Text whenever the data changes.
+
+When you tap the button, it calls the generate() method in the ViewModel, that does the same in the Model, and then Combine does the rest.
+
+### And Where is the Protocol?
+As you can see, everything works, but let's say that instead of instantiating AnimalGenerator in our ViewModel, we want to use a Protocol, as a Blueprint for different models, depending on what type of content we want to generate and display in the View.
 
 Let's write a simple protocol called * "Generator"* and update our * "AnimalGenerator"* class to conform.
 
@@ -109,7 +111,7 @@ class AnimalGenerator: Generator, ObservableObject {
 }
 ```
 
-#### And the expected error (Oops!)
+#### And here's the error (Oops!)
 
 ![Property declared inside a protocol cannot have a wrapper](/assets/posts/2020-07-01-combine-and-protocols-in-swift/wrapper-error.png)
 `Property declared inside a protocol cannot have a wrapper.`
@@ -117,10 +119,10 @@ class AnimalGenerator: Generator, ObservableObject {
 The error is reminding us what I was mentioning at the beginning: Wrappers and Stored properties are not allowed in Swift protocols and extensions (at least for now).
 
 
-## The Workaround
+## The Solution
 Before doing the fix, let's talk about the @Published wrapper.
 
-In essence, a property wrapper is a type that wraps a value and attaches some logic to it.   When a property of an ObservableObject has a @Published wrapper, specific logic is attached to it, so its value is published anytime it changes.  More explicitly in the *willSet* block.
+In essence, a property wrapper is a type that wraps a value and attaches some logic to it.   When a property has a @Published wrapper, specific logic is attached to it, so its value is published anytime it changes.  More explicitly in during the *willSet* block.
 
 In simple terms, @Published creates a publisher that can be accessed with the *'$'* operator as we are doing in our ViewModel, allowing us access to its value whenever it changes in the future.
 
@@ -129,8 +131,13 @@ Since we cannot use a @Published wrapper as part of our protocol declaration, we
 #### Our Updated Protocol
 ```swift
 protocol Generator {
+    // Wrapped value  
     var name: String { get }
+
+    // (Published property wrapper)
     var namePublished: Published<String> { get }
+
+     // Publisher
     var namePublisher: Published<String>.Publisher { get }
     func generate()
 }
@@ -156,7 +163,7 @@ class AnimalGenerator: Generator, ObservableObject {
 }
 ```
 
-We have now manually defined our Publisher in the Protocol declaration, and exposed the *namePublisher* publisher in the Model, thus creating a polymorphic interface that allows us to decouple things and now use our protocol in the ViewModel.
+We have now manually defined our Publisher in the Protocol declaration, and exposed both the Publisher (*namePublisher*) and the Published property (*namePubished*) in the Model, and can now create a subscription.
 
 #### Our Updated ViewModel
 ```swift
@@ -183,7 +190,7 @@ class TheViewModel: ObservableObject {
 }
 ```
 
-Note that we are now using the *generator.namePublisher* we manually defined instead of *generator.$name*.
+Note that we are now using our manually exposed *generator.namePublisher* instead *generator.$name* as we did before.
 
 ## And now, let's fix the View
 In the original example, we are instantiating the ViewModel from the View, and we can continue to do the same, but just passing the Generator we want to use, like this:
@@ -268,8 +275,8 @@ An @ObservedObject instance is replaced every time SwiftUI decides to discard an
 
 Using @StateObject is then particularly useful when you are instantiating your ViewModel from the View itself, as we did in the first example
 
-## Wrapping up
-As you can see, it is reasonably straightforward to use Combine and maintain a polymorphic approach via Protocol Oriented Programming in your classes.
+## Conclusion
+As you can see, it is reasonably straightforward to use Combine and still maintain polymorphic interfaces via Protocol Oriented Programming in your classes.
 
 Some would say that the next step would be decoupling the View itself to become completely ignorant of it's ViewModel and use a Protocol instead, especially if you are still stuck with UIKit and UIViewControllers. Nevertheless, in this case, I find it overkill.   Maybe we can cover that in another post.
 
