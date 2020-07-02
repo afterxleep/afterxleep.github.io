@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Mentoring Software Engineers - Interns
+title: Mentoring Software Engineers - (Part 1) Interns
 image: engineers1.jpg
 tags:
   - management software  
@@ -62,6 +62,9 @@ Setting up one on one meeting at least once a week, and asking your mentees to c
 
 One on one meetings are the best place to provide feedback.  Be honest, direct when doing so, reflect on how things are progressing, and always make sure to recognize their work and effort when recognition is due.
 
+---
+
+In the next post, we will be talking about hiring and mentoring junior engineers. Stay tuned!
 
 ---
 
