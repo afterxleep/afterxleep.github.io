@@ -89,7 +89,7 @@ This is a simple SwiftUI View, with a text and a button.  It owns our ViewModel 
 When you tap the button, it calls the generate() method in the ViewModel.  The ViewModel calls the same method in our Model and Combine takes cares of publishing the changes.
 
 ### And Where is the Protocol?
-As you can see, everything works, but let's say that instead of instantiating AnimalGenerator in our ViewModel, we want to use a Protocol as a blueprint for different models, depending on what type of content we want to generate and display in the View.
+Everything works so far, but what if instead of instantiating AnimalGenerator in our ViewModel, we want to use a Protocol as a blueprint and use different models to generate different data, load it from the web or simply write a mock.  This is when Protocol Oriented Programming shines. 
 
 Let's write a simple protocol called "Generator" and update our "AnimalGenerator" class to conform.
 
