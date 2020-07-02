@@ -118,7 +118,7 @@ class AnimalGenerator: Generator, ObservableObject {
 }
 ```
 
-#### And here's the error (Oops!)
+#### Houston, we have a problem
 
 ![](/assets/posts/2020-07-01-combine-and-protocols-in-swift/wrapper-error.png)
 `Property declared inside a protocol cannot have a wrapper.`
@@ -133,7 +133,7 @@ In essence, a property wrapper is a type that wraps a value and attaches some lo
 
 In simple terms, @Published creates a publisher that can be accessed with the *'$'* operator (as we do in our ViewModel), allowing any subscriber to get its value whenever it changes in the future.
 
-Since we cannot use a @Published wrapper as part of our protocol declaration, we need to describe its synthesized methods explicitly, so Let's add them to our Generator protocol and AnimalGenerator Model.
+Since we cannot use a @Published wrapper as part of our protocol declaration, we need to describe its synthesized methods explicitly. Let's add them to our Generator protocol and AnimalGenerator Model.
 
 #### Our Updated Protocol
 ```swift
@@ -170,7 +170,7 @@ class AnimalGenerator: Generator, ObservableObject {
 }
 ```
 
-We have now manually defined our Publisher in the Protocol declaration (namePublisher), and exposed both the Publisher (*namePublisher*) and the Published property (*namePubished*) in the Model.  Now let's update the subscription in the ViewModel
+We have now manually defined our Publisher in the Protocol declaration (namePublisher), and exposed both the Publisher (*namePublisher*) and the Published property (*namePubished*) in the Model.  Now let's update our ViewModel to make it work.
 
 #### Our Updated ViewModel
 ```swift
@@ -197,10 +197,10 @@ class TheViewModel: ObservableObject {
 }
 ```
 
-Note that we are now using our manually exposed *generator.namePublisher* instead *generator.$name* as we did before.
+Note that we are now using our manually exposed *generator.namePublisher* and we are not using the *'$'* operator anymore with *generator.$name*
 
 ## And now, let's fix the View
-In the original example, we are instantiating the ViewModel from the View, and we can continue to do the same, but just passing the Generator we want to use, like this:
+In the original example, we are instantiating the ViewModel from inside the View, and we can continue to do the same, just by passing the Generator we want to use, like this:
 
 #### Our Updated View
 ```swift
@@ -217,7 +217,7 @@ struct TheView: View {
 }
 ```
 
-It works, but it does not look good, as we are now coupling the View, ViewModel and Model together there, so let's instantiate our ViewModel and Model separately and inject them into our View.
+It works, but it does not look good, as we are now mashing the View, ViewModel and Model together there.  Let's better instantiate our ViewModel and Model separately and inject them into our View.
 
 First, let's update our View and remove the initialization for the ViewModel.
 
@@ -285,8 +285,8 @@ Using @StateObject is then particularly useful when you are instantiating your V
 ## Conclusion
 As you can see, it is reasonably straightforward to use Combine and still maintain polymorphic interfaces via Protocol Oriented Programming in your classes.
 
-Some would say that the next step would be decoupling the View itself to become completely ignorant of it's ViewModel and use a Protocol instead.  Yes, it can be done, but heads up, it's tricky. Nevertheless, in this case, I find it overkill.   Maybe we can cover that in another post.
+Some would say that the next step would be decoupling the View itself to become completely ignorant of it's ViewModel and use a Protocols there too.  It can be done easily if your are using UIKit, although it will require a little more work with SwiftUI. Nevertheless, for this case, It's overkill.   Maybe we can cover that in another post.
 
-The final example is available [here](https://gist.github.com/afterxleep/2246e5a38ea3704b9f9b866a106b8d8f).  Go ahead, paste it on a Playground and send over your comments and suggestions.
+Check out the [final exmaple](https://gist.github.com/afterxleep/2246e5a38ea3704b9f9b866a106b8d8f).  As everything was done in a Playground, you can paste and try the code in your Mac or iPad and send back any comments and suggestions.
 
 
