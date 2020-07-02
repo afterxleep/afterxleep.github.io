@@ -81,7 +81,7 @@ PlaygroundPage.current.setLiveView(TheView())
 This is our Model.  It holds a list of animal names and has a method to publish one random animal name via a Publisher.  *(@Published private(set) var name)*
 
 #### TheViewModel
-Our ViewModel, responsible for managing the View.  It owns our Model, subscribes to it and then re-publishes *name* via its *textToShow* publisher. *(@Published var textToShow).*
+Our ViewModel, responsible for managing the View.  It owns our Model, subscribes to it and then re-publishes *name* via its *displayData* publisher. *(@Published var textToShow).*
 
 #### TheView
 This is a simple SwiftUI View, with a text and a button.  It owns our ViewModel and subscribes to it.  It displays the ViewModel's *textToShow* value as a Text whenever the data changes.
