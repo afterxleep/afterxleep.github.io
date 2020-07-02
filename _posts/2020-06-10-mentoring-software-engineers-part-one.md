@@ -64,8 +64,4 @@ One on one meetings are the best place to provide feedback.  Be honest, direct w
 
 ---
 
-In the next post, we will be talking about hiring and mentoring junior engineers. Stay tuned!
-
----
-
 Photo by Sung Shin on Unsplash
