@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Combine and Protocols in Swift - Defining Protocols with a @Published property wrapper
-image:
+image: /posts/2020-07-1-combine-and-protocols-in-swift/header.jpg
 tags:
   - development ios swift
 ---
@@ -111,7 +111,7 @@ class AnimalGenerator: Generator, ObservableObject {
 
 #### And the expected error (Oops!)
 
-![Property declared inside a protocol cannot have a wrapper](/assets/posts/2020-06-10/protocol-wrapper-error.png)
+![Property declared inside a protocol cannot have a wrapper](/assets/posts/2020-07-1-combine-and-protocols-in-swift/wrapper-error.png)
 `Property declared inside a protocol cannot have a wrapper.`
 
 The error is reminding us what I was mentioning at the beginning: Wrappers and Stored properties are not allowed in Swift protocols and extensions (at least for now).
@@ -134,7 +134,7 @@ protocol Generator {
     var namePublisher: Published<String>.Publisher { get }
     func generate()
 }
-`"
+```
 
 #### Our Updated Model conforming to it
 ```swift
@@ -154,7 +154,7 @@ class AnimalGenerator: Generator, ObservableObject {
         self.name = animals.randomElement() ?? ""
     }
 }
-`"
+```
 
 We have now manually defined our Publisher in the Protocol declaration, and exposed the *namePublisher* publisher in the Model, thus creating a polymorphic interface that allows us to decouple things and now use our protocol in the ViewModel.
 
@@ -181,7 +181,7 @@ class TheViewModel: ObservableObject {
         generator.generate()
     }
 }
-`"
+```
 
 Note that we are now using the *generator.namePublisher* we manually defined instead of *generator.$name*.
 
@@ -201,11 +201,11 @@ struct TheView: View {
         }
     }
 }
-`"
+```
 
 It works, but it does not look good, as we are now coupling the View, ViewModel and Model together there, so let's instantiate our ViewModel and Model separately and inject them into our View.
 
-First, let's update our View and change the ViewModel to be an EnvironmentObject.
+First, let's update our View and remove the initialization for the ViewModel.
 
 #### And the final version
 ```swift
@@ -220,7 +220,7 @@ struct TheView: View {
         }
     }
 }
-`"
+```
 
 And then, we can simply instantiate our Model and ViewModel and pass them to the View like this.
 
@@ -231,7 +231,7 @@ let viewModel: TheViewModel = TheViewModel(generator: AnimalGenerator())
 PlaygroundPage.current.setLiveView(
     TheView(viewModel: viewModel)
 )
-`"
+```
 
 #### Let's try it out with another Model
 
@@ -259,7 +259,7 @@ PlaygroundPage.current.setLiveView(
     TheView(viewModel: viewModel)
 )
 
-`"
+```
 
 ## Note on iOS 14
 iOS 14 introduced a new @StateObject wrapper, and it might be a good idea to use it instead of @ObservedObject.
@@ -269,16 +269,10 @@ An @ObservedObject instance is replaced every time SwiftUI decides to discard an
 Using @StateObject is then particularly useful when you are instantiating your ViewModel from the View itself, as we did in the first example
 
 ## Wrapping up
-As you can see, it is reasonably straightforward to user Combine and maintain a polymorphic approach via Protocol Oriented Programming in your classes.
+As you can see, it is reasonably straightforward to use Combine and maintain a polymorphic approach via Protocol Oriented Programming in your classes.
 
-Some would say that the next step would be decoupling the View itself to become completely ignorant of it's ViewModel and use a Protocol instead, especially if you are still stuck with UIKit and ViewControllers. Nevertheless, in this case, I find it overkill.   Maybe we can cover that in another post.
+Some would say that the next step would be decoupling the View itself to become completely ignorant of it's ViewModel and use a Protocol instead, especially if you are still stuck with UIKit and UIViewControllers. Nevertheless, in this case, I find it overkill.   Maybe we can cover that in another post.
 
-The final example is available [here](https://gist.github.com/afterxleep/2246e5a38ea3704b9f9b866a106b8d8f).  Just paste it in a new Playground.
-
-Please leave your comments or suggestions.
-
-## Further reading
-* If you want to read more about Property Wrappers in SwiftUI, [this article](https://swiftwithmajid.com/2019/06/12/understanding-property-wrappers-in-swiftui/) is a good starting point.
+The final example is available [here](https://gist.github.com/afterxleep/2246e5a38ea3704b9f9b866a106b8d8f), so go ahead, paste it on a Playground and send over your comments and suggestions.
 
 
-Enjoy!

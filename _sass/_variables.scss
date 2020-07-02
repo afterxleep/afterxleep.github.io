@@ -18,21 +18,22 @@ $white: #fff;
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $lato: 'Lato', sans-serif;
+$merriweather: 'Merriweather', serif;
 $georgia: Georgia, serif;
 
 // Fonts
-//$base-font: 'Spoqa Han Sans', 'Source Sans Pro', 'Apple SD Gothic Neo', 'Nanum Barun Gothic', 'Nanum Gothic', 'Verdana', 'Arial', 'Dotum', sans-serif;
-$base-font: $lato;
+$base-font: $merriweather;
 $code-font: 'Inconsolata', 'Menlo', 'Courier New', 'Monaco', 'Spoqa Han Sans', monospace;
 
 // Font sizes
-$base-font-size: 19px;
-$regular-font-size: 17px;
+$base-font-size: 18px;
+$regular-font-size: 16px;
 $small-font-size: 13px;
 $very-small-font-size: 11px;
 $line-height: 32px;
 $header-line-height: 32px;
 $header-line-height-mobile: 32px;
+$code-font-size: 15px;
 
 // Colors
 $base-color: $black;
@@ -70,7 +71,7 @@ $li-bullets-width: 2em;
 $li-line-height: 1.55;
 
 $ul-bullets-font: inherit;
-$ul-bullets-font-size: 1.4em;
+$ul-bullets-font-size: 1em;
 $ul-bullets-font-line-height: 1.2;
 $ul-bullets-right-space: .3em;
 

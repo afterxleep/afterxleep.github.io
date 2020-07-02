@@ -31,7 +31,9 @@ layout: default
       <div class="entry">
         <div class="excerpt">
           {% if post.image %}
-          <img src="/assets/{{post.image}}" />
+          <div class="excerpt-image">
+            <img src="/assets/{{post.image}}" />
+          </div>
           {% endif %}
           {{ post.excerpt }}
           <span class="read-more">
