@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Protocol Oriented Programming and combime // Using @Published in your Protocols
+title: Protocol Oriented Programming and Combine // Using @Published in your Protocols
 image: /posts/2020-07-01-combine-and-protocols-in-swift/header.jpg
 tags:
   - development ios swift
