@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Protocols and Combine&#58; <br> Using @Published in your Protocol declaration
+title: Protocols and Combine&#58; Using @Published in your Protocol declaration
 image: /posts/2020-07-01-combine-and-protocols-in-swift/header.jpg
 tags:
   - development ios swift
