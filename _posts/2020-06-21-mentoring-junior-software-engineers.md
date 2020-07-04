@@ -79,7 +79,13 @@ Setting up weekly one-on-one meetings with your direct reports is crucial, and e
 
 ---
 
-I hope you find these insights useful.  Please leave any comments or questions below and stay tuned for the next post in the series.
+Please leave your comments below and check out other posts in the series:
+
+
+* [Motivating Engineering Interns](https://danielbernal.co/mentoring-software-engineers-part-one/)
+* [Motivating Junior Engineers and new Hires (This Post)](https://danielbernal.co/mentoring-junior-software-engineers/) 
+
+
 
 ---
 <span>Photo by <a href="https://unsplash.com/@frantic?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Alex Kotliarskyi</a> on <a href="https://unsplash.com/s/photos/programming?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
