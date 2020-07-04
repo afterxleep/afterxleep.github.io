@@ -64,4 +64,11 @@ One on one meetings are the best place to provide feedback.  Be honest, direct w
 
 ---
 
+Other posts in the series:
+
+* [Motivating Engineering Interns (this post)](https://danielbernal.co/mentoring-software-engineers-part-one/)
+* [Motivating Junior Engineers and new Hires](https://danielbernal.co/mentoring-junior-software-engineers/)
+
+---
+
 Photo by Sung Shin on Unsplash
