@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Mentoring Software Engineers (Part 1) - Interns
+title: Mentoring Engineering Interns
 image: engineers1.jpg
 tags:
   - management software  
