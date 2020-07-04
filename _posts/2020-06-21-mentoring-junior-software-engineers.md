@@ -82,8 +82,8 @@ Setting up weekly one-on-one meetings with your direct reports is crucial, and e
 Please leave your comments below and check out other posts in the series:
 
 
-* [Motivating Engineering Interns](https://danielbernal.co/mentoring-software-engineers-part-one/)
-* [Motivating Junior Engineers and new Hires (This Post)](https://danielbernal.co/mentoring-junior-software-engineers/) 
+* [Mentoring Engineering Interns](https://danielbernal.co/mentoring-software-engineers-part-one/)
+* [Mentoring Junior Engineers and new Hires (This Post)](https://danielbernal.co/mentoring-junior-software-engineers/) 
 
 
 
