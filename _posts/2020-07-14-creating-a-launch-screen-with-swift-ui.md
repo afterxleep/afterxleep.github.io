@@ -36,7 +36,7 @@ As you may know, [Apple's recommendation for Launch Screens](https://developer.a
 
 These options will allow you to display a mocked, navigation bar, tab bar, or toolbar on the Launch Screen.  When enabling them, you will have the option to provide an image from your asset catalog, but if you leave it blank, a default UI empty navigation bar, tab bar, or toolbar is used instead.
 
-#### Quick Example:
+### Here's an example
 ![](/assets/posts/2020-07-15-creating-a-launch-screen-with-swift-ui/example.png)
 
 On the left, I'm using background color and a transparent version of the Bouncer logo.  Note that the image is not resized or scaled, so you will need to provide the correct dimensions.  In this case, I added @1x, @2x, and @3x versions, being the smallest 200x200px.
