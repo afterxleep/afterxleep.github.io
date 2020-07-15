@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Launch Screens and the SwiftUI App Life Cycle
+title: Launch Screens and the SwiftUI App Life Cycle on iOS 14
 image: ios14.jpg
 tags:
   - development ios swift swiftui ios14
