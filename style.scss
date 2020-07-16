@@ -22,7 +22,6 @@ body {
   font-family: $base-font;
   color: $base-color;
   line-height: $line-height;
-  font-weight: 400;
 }
 
 .container {
@@ -435,8 +434,8 @@ article {
 .entry {
 
   p {
-    font-weight: 300;
-    color: $darkGray;
+    font-weight: 350;
+    color: $base-color;
     line-height: $line-height;
   }
 
