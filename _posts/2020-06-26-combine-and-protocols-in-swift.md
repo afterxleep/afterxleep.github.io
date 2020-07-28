@@ -289,7 +289,7 @@ Some would say that the next step would be decoupling the View itself to become 
 
 Check out the [final exmaple](https://gist.github.com/afterxleep/2246e5a38ea3704b9f9b866a106b8d8f).  As everything was done in a Playground, you can paste and try the code in your Mac or iPad.
 
-I hope you have enjoyed this article.  Feel free to follow me and reach out on (Twitter)[https://twitter.com/afterxleep] if you have any questions or feedback.
+I hope you have enjoyed this article.  Feel free to follow me and reach out on [Twitter](https://twitter.com/afterxleep) if you have any questions or feedback.
 
 
 

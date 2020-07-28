@@ -87,7 +87,7 @@ Many of us are struggling to find Swift UI useful in the real world, as it's sti
 
 ---
 
-If you have more books ideas, feel to follow me and send them on (Twitter)[https://twitter.com/afterxleep].  See you soon!.
+If you have more books ideas, feel to follow me and send them on [Twitter](https://twitter.com/afterxleep).  See you soon!.
 
 
 

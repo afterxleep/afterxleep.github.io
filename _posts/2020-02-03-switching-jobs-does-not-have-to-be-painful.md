@@ -69,7 +69,7 @@ Embracing that you might regret the decision from the start will set you in the 
 
 --
 
-I hope these tips help you become more confident and make better decisions on your next job hunt. Feel free to follow me and send your comments and questions on (Twitter)[https://twitter.com/afterxleep].  See you soon!.
+I hope these tips help you become more confident and make better decisions on your next job hunt. Feel free to follow me and send your comments and questions on [Twitter](https://twitter.com/afterxleep).  See you soon!.
 
 ---
 

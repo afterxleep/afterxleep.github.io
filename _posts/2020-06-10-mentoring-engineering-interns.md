@@ -64,7 +64,7 @@ One on one meetings are the best place to provide feedback.  Be honest, direct w
 
 ---
 
-I hope you have enjoyed this article.  Feel free to follow me and reach out on (Twitter)[https://twitter.com/afterxleep] if you have any questions or feedback.
+I hope you have enjoyed this article.  Feel free to follow me and reach out on [Twitter](https://twitter.com/afterxleep) if you have any questions or feedback.
 
 
 Check out other posts in the series:

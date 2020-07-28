@@ -79,7 +79,7 @@ Setting up weekly one-on-one meetings with your direct reports is crucial, and e
 
 ---
 
-I hope you have enjoyed this article.  Feel free to follow me and reach out on (Twitter)[https://twitter.com/afterxleep] if you have any questions or feedback.
+I hope you have enjoyed this article.  Feel free to follow me and reach out on [Twitter](https://twitter.com/afterxleep) if you have any questions or feedback.
 
 
 Check out other posts in the series:
