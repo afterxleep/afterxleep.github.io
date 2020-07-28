@@ -41,5 +41,6 @@ On the left, I'm using background color and a transparent version of the Bouncer
 
 On the right, I left the background color empty, and just added the default NavigationBar and TabBar options.
 
-That's it!.  Pretty straightforward huh?.
+That's it!.  Pretty straightforward huh?.  Feel free to follow me and reach out on (Twitter)[https://twitter.com/afterxleep] if you have any questions or feedback.
+
 

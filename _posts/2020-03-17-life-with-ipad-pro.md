@@ -86,6 +86,9 @@ Just in case you’re wondering, here is my iPad Setup:
 * [Anker PowerPort Atom III @ 60W](https://www.anker.com/products/variant/powerport-atom-iii-60w/A2613121) (Small size, fast charging & works with Mac)
 * AirPods, first version.
 
+
+Hope you enyojed this article.  Feel free to follow me and send your comments and suggestions on (Twitter)[https://twitter.com/afterxleep].  See you soon!.
+
 ---
 
 Photo thanks to,
