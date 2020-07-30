@@ -287,7 +287,9 @@ As you can see, it is reasonably straightforward to use Combine and still mainta
 
 Some would say that the next step would be decoupling the View itself to become completely ignorant of it's ViewModel and use a Protocols there too.  It can be done easily if your are using UIKit, although it will require a little more work with SwiftUI. Nevertheless, for this case, It's overkill.   Maybe we can cover that in another post.
 
-Check out the [final exmaple](https://gist.github.com/afterxleep/2246e5a38ea3704b9f9b866a106b8d8f).  As everything was done in a Playground, you can paste and try the code in your Mac or iPad.
+Check out the [final project](https://github.com/afterxleep/Combine-with-Protocols) as an app, or simply run [this playground](https://github.com/afterxleep/Combine-with-Protocols/blob/master/Playground-Sample.playground/Contents.swift) on your favorite device.
+
+---
 
 I hope you have enjoyed this article.  Feel free to follow me and reach out on [Twitter](https://twitter.com/afterxleep) if you have any questions or feedback.
 
