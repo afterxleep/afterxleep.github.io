@@ -122,12 +122,14 @@ hr {
 
 ol, ul {
   > li {
+    font-weight: 350;
     &:before {
       position: absolute;
       width: $li-bullets-width;
       margin-left: -$li-bullets-width;
       display: inline-block;
       box-sizing: border-box;
+      color: red;
       text-align: right;
     }
   }
@@ -396,7 +398,6 @@ nav {
     margin-left: 20px;
     color: $gray;
     text-align: right;
-    font-weight: 400;
     letter-spacing: 1px;
 
     @include mobile {
@@ -434,7 +435,7 @@ article {
 .entry {
 
   p {
-    font-weight: 350;
+    font-weight: $base-font-weight;
     color: $base-color;
     line-height: $line-height;
   }
@@ -485,7 +486,7 @@ article {
 
   .post-header-image {
     object-fit: contain;
-    width: 100%;    
+    width: 100%;
     margin-bottom: 40px;
     margin-top:10px;
 
@@ -503,7 +504,7 @@ article {
   }
 
   .date {
-    font-weight: 300;
+    font-weight: $light-font-weight:;
     color: $base-lighten-color;
     margin-right: 3px;
     font-size: $regular-font-size;
@@ -512,7 +513,7 @@ article {
 
   .tag {
     display: inline;
-    font-weight: 400;
+    font-weight: $base-font-weight:;
     font-size: $small-font-size;
 
     li:before {
@@ -543,7 +544,7 @@ article {
 }
 
 .pagination {
-  font-weight: 400;
+  font-weight: $base-font-weight;
   padding: 2em 0;
   width: 100%;
   display: inline-block;
@@ -582,7 +583,7 @@ article {
   time {
     color: $base-lighten-color;
     font-size: $small-font-size;
-    font-weight: 400;
+    font-weight: $base-font-weight;
     margin-left: 3px;
   }
 }
@@ -626,13 +627,13 @@ article {
   time {
     color: $base-lighten-color;
     font-size: $small-font-size;
-    font-weight: 400;
+    font-weight: $base-font-weight;
     margin-left: 3px;
   }
 }
 
 .whoami {
-  font-weight: 300;
+  font-weight: $light-font-weight;
   margin-top:75px;
   margin-top:50px;
 }
@@ -648,12 +649,12 @@ footer {
   border-top: 1px solid $footer-border-color;
 
   .madeby {
-    font-weight: 300;
+    font-weight: $light-font-weight;
     font-size: $small-font-size;
   }
 
   p {
-    font-weight: 400;
+    font-weight: $base-font-weight;
   }
 
   .svg-icon {
@@ -694,7 +695,7 @@ button {
   font-size: $small-font-size;
   padding:8px;
   border-radius: 8px;
-  font-weight: 300;
+  font-weight: $light-font-weight;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

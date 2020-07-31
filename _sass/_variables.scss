@@ -34,6 +34,8 @@ $line-height: 32px;
 $header-line-height: 34px;
 $header-line-height-mobile: 34px;
 $code-font-size: 15px;
+$base-font-weight: 350;
+$light-font-weight: 300;
 
 // Colors
 $base-color: $black;
@@ -73,12 +75,12 @@ $li-line-height: 1.55;
 $ul-bullets-font: inherit;
 $ul-bullets-font-size: 1em;
 $ul-bullets-font-line-height: 1.2;
-$ul-bullets-right-space: .3em;
+$ul-bullets-right-space: .5em;
 
 $ol-bullets-font: inherit;
 $ol-bullets-font-size: 1em;
 $ol-bullets-font-line-height: inherit;
-$ol-bullets-right-space: .3em;
+$ol-bullets-right-space: .5em;
 
 $li-child-size-ratio: 0.95;
 
