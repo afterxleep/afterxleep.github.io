@@ -504,7 +504,7 @@ article {
   }
 
   .date {
-    font-weight: $light-font-weight:;
+    font-weight: $light-font-weight;
     color: $base-lighten-color;
     margin-right: 3px;
     font-size: $regular-font-size;
@@ -513,7 +513,7 @@ article {
 
   .tag {
     display: inline;
-    font-weight: $base-font-weight:;
+    font-weight: $base-font-weight;
     font-size: $small-font-size;
 
     li:before {
