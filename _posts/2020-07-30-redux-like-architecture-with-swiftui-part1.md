@@ -250,7 +250,7 @@ struct ContentView_Previews: PreviewProvider {
 
 That's it!.   Pretty neat, huh?.     There is plenty of room for optimization, and we will follow up with this in our next post.   
 
-Check out the final app for this post here, and keep tuned for Part 2, where we will be talking about composition, and tweaking our Store to support asynchronous operations using Combine!.
+Check out the final app for this post [here](https://github.com/afterxleep/redux-architecture-ios-part1), and keep tuned for Part 2, where we will be talking about composition, and tweaking our Store to support asynchronous operations using Combine!.
 
 I hope you enjoyed this tutorial.   If you have any questions on comments, feel free to ping me on [Twitter](https://twitter.com/afterxleep).
 
