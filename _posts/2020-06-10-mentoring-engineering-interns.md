@@ -69,7 +69,7 @@ I hope you have enjoyed this article.  Feel free to follow me and reach out on [
 
 Check out other posts in the series:
 
-* [Mentoring Engineering Interns (This post)](https://danielbernal.co/mentoring-software-engineers-part-one/)
+* [Mentoring Engineering Interns (This post)](https://danielbernal.co/mentoring-engineering-interns/)
 * [Mentoring Junior Engineers and new Hires](https://danielbernal.co/mentoring-junior-software-engineers/)
 
 ---
