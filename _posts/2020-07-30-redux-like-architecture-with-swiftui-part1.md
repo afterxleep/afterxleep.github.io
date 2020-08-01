@@ -9,7 +9,7 @@ tags:
 
 Since the beta release of iOS 14 and now that SwiftUI is a little more mature, I have been exploring different architectures that better fit its patterns. After working with React for a while, I got curious about using something similar to Redux on iOS.<!--more-->
 
-The idea is to describe the whole App State using a single or set of structs, to have a single source of truth for the entire application, thus having all the information required by our User Interface readily available and up to date.
+The basic idea is to describe the whole App State using a single or set of structs, to have a single source of truth for the entire application.  This means, having all the information required by our User Interface readily available and up to date.
 
 ## Intro to Redux
 Let's start with a basic intro to the pattern.  If you are already familiar with it and just want to get to coding, feel free to skip to the next section
@@ -23,7 +23,7 @@ With Redux (and Flux), all the data in your app follows a single direction, and 
 
 
 ### Action
-Actions contain the data that we have to process to modify the State, and a reference to a function (Reducer) that will be used to perform those modifications.
+Actions contain the data that we have to process to mutate the App State, and a reference to a function (Reducer) that will be used to perform those modifications.
 
 ### Dispatcher
 It is the central hub that manages all the data flow in your app but has no real intelligence or function.  It receives an action and sends it to the Store for processing.
@@ -31,16 +31,16 @@ It is the central hub that manages all the data flow in your app but has no real
 ### Store
 It contains the application state and its logic.  Similar to a Model in classic MVC, the Store manages the State of every single object in your application.
 
-When the Store receives an action, it passes the data to a ([reducer function](https://redux.js.org/basics/reducers))  that receives a "live" copy of the State, alongside some data, and then mutates the State accordingly.
+When the Store receives an action, it passes the data to a [reducer function](https://redux.js.org/basics/reducers)  that receives a "live" copy of the State, alongside some data, and then mutates the State accordingly.
 
 Reducers are pure functions and should be limited to computing the next version of the App State.  They should be 100% predictable, which means that calling them with the same inputs, should always produce the same results.  
 
-They are the only ones responsible for mutating your app's State.
+They should be the only ones responsible for mutating your app's State.
 
 ### Views
 Views have read-only access to the Application State.  This is a huge advantage when it comes to debugging, updating the UI, and dealing with complex data sets.  
 
-In Redux, the only way to update the State is via dispatchers, which the views can trigger based on user interaction like the of a button or typing on a text field.  (As you can see in the diagram below)
+In Redux, the only way to update the State is through a dispatcher, which you can call from the views, based on user interaction like the tap of a button or typing on a text field.  (As you can see in the diagram below)
 
 #### Data Flow (Dispatching from a View)
 ![](/assets/posts/2020-07-30-redux-like-architecture-with-swiftui-part1/diagram2.png)
@@ -58,7 +58,7 @@ For his example, we will be re-building the same animal name generator from the 
 
 
 #### Note on Xcode 12
-I will be using Xcode 12, (currently in Beta), and creating a new app with the new SwiftUI lifecycle, which helps us get rid of the AppDelegate and storyboards completely.
+I will be using Xcode 12, (currently in Beta), and creating a new app with the new SwiftUI lifecycle, which helps us get rid of the AppDelegate and storyboards completely, but you can use Xcode 11 as everything works in iOS 13.
 
 To create the app, select these options.
 
@@ -66,10 +66,10 @@ To create the app, select these options.
 
 ---
 
-Now let's create the different parts of our app.  I have separated them into different files for clarity, but do as you best see fit.
+Now let's create the different parts of our app.  I have separated them into different files for clarity, but do as you see fit.
 
 ### App State
-Our app state will now be a single Struct.
+Our app state is a single Struct.
 
 #### AppState.swift
 ```swift
@@ -98,9 +98,9 @@ enum AppAction {
 ### App Reducers
 Remember about reducers?   These guys are responsible for receiving the current State and performing an action to mutate it.
 
-First, create a type alias for our Reducer,  which will receive the State as an inout parameter, and corresponding Action.  Using an inout parameter, we guarantee that we are mutating the only source of truth, every single time.
+For convenience, we will create a typealias for our Reducers.  They will receive the State as an inout parameter, and a corresponding Action.  By using an inout parameter, we guarantee that we are mutating the only source of truth, every single time.
 
-Then we will have a simple appReducer function that will switch between the available actions in our app and mutate the State.
+Then we will have a simple appReducer function that will switch between the available actions in our app and mutate the State accordingly.
 
 #### Reducers.swift
 ```swift
@@ -153,9 +153,9 @@ final class Store<State, Action>: ObservableObject {
 }
 ```
 
-First, we will define a type of alias to access our Store without providing all the arguments, and then our final class, to hold the application Store.
+First, we will define an AppStore typealias for convenience, and then our final class, to hold the application Store.
 
-Since we are using SwiftUI, we can make it an ObservableObject, and set the App State to be a @Published property.   That way, our views can subscribe to changes and update themselves automatically, and make it read-only, we set the property access control to private(set).
+Since we are using SwiftUI, we can make it an ObservableObject, and set the App State to be a @Published property.   That way, our views can subscribe to changes and update themselves automatically.  To make it read-only, we set the property access control to private(set).
 
 Our initializers allow us to set an initial State, in case we want to load some data into it at initialization, and lets us define the Reducer we will be using to mutate it.
 
@@ -188,13 +188,13 @@ struct AnimalView: View {
 
 As you can see, the view binds itself to the AppStore via the @Environment property wrapper and gets its data from the State.
 
-When you tap the button, the dispatcher sends the "getAnimal" Action.  That Action arrives at our Reducer, which generates a random name and modifies the State.  SwiftUI automatic binding re-renders the view as soon as the state var changes.
+When you tap the button, we dispatch the "getAnimal" Action.  It arrives at our Reducer, which generates a random name and modifies the State.  SwiftUI automatic binding re-renders the view as soon as the state changes.  Pure magic!.
 
 
 ### Main View
 The only thing we have to do is to initialize the State at launch, include our AnimalView, and pass the Store as an environment object.
 
-Let's modify our default project View, initialize the State with our default reducer, and pass it along.
+Let's modify our default project View.
 
 #### ContentView.swift
 ```swift
@@ -217,9 +217,9 @@ struct ContentView_Previews: PreviewProvider {
 
 As you can see, we set the "currentAnimal" value by force when initializing the Store so that we can have something rendered in the view at launch.  This is useful if, for example, we were loading the data from disk or a database.
 
-However, don't recommend modifying the State directly, even on initialization, as it breaks the Data flow of the app. Use this only when there is no other choice.
+However, I don't recommend modifying the State directly, even on initialization, as it breaks the Data flow of the app. Use this only when there is no other choice.
 
-We will then, create an initializer that simply dispatches the getAnimal Action, as follows:
+To fix this, let's create an initializer that simply dispatches the getAnimal Action, as follows:
 
 #### ContentView.swift
 ```swift
