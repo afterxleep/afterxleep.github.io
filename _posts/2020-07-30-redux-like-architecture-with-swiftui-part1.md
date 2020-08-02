@@ -35,7 +35,7 @@ When the Store receives an action, it passes the data to a ([reducer function](h
 
 Reducers are pure functions and should be limited to computing the next version of the App State.  They should be 100% predictable, which means that calling them with the same inputs, should always produce the same results.  
 
-They are the only ones responsible for mutating your app's State.
+They are the only ones responsible for mutating your app's State only, and should not depend on third party services or modules to do that.
 
 ### Views
 Views have read-only access to the Application State.  This is a huge advantage when it comes to debugging, updating the UI, and dealing with complex data sets.  
@@ -250,7 +250,7 @@ struct ContentView_Previews: PreviewProvider {
 
 That's it!.   Pretty neat, huh?.     There is plenty of room for optimization, and we will follow up with this in our next post.   
 
-Check out the final app for this post [here](https://github.com/afterxleep/redux-architecture-ios-part1), and keep tuned for Part 2, where we will be talking about composition, and tweaking our Store to support asynchronous operations using Combine!.
+Check out the resulting app for this post is this repo branch [here](https://github.com/afterxleep/Redux-Architecture-SwiftUI/tree/part1) and keep tuned for Part 2, where we will be talking about tweaking our Store to support asynchronous operations, middlewares and Combine!.
 
 I hope you enjoyed this tutorial.   If you have any questions or comments, feel free to ping me on [Twitter](https://twitter.com/afterxleep).
 
