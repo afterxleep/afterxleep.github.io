@@ -6,7 +6,7 @@
 name: Daniel Bernal // Blog
 
 # Short bio or description (displayed in the header)
-description: I'm Daniel Bernal (aka. afterXleep) and this is my personal blog.  I write about iOS, mobile apps and software development on different technologies.
+description: I'm Daniel Bernal (aka. afterXleep) and this is my personal blog.  I write about iOS, mobile apps, software development and technology management.
 
 #
 # Flags below are optional
@@ -29,7 +29,7 @@ navigation:
   #  url: https://github.com/AWEEKJ/kiko-now
 
 # Pagination
-paginate: 5
+paginate: 10
 
 # Includes an icon in the footer for each username you enter
 footer-links:
@@ -57,7 +57,7 @@ footer-text: Made in Bogotá by afterxleep
 # disqus: afterxleep
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-# google_analytics: UA-54180703-1
+google_analytics: UA-174215274-1
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
