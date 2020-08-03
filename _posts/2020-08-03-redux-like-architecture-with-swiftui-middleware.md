@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Redux-like architecture with SwiftUI&#58; Side Effects and Middleware functions
+title: Redux-like architecture with SwiftUI&#58; Side Effects
 image: /posts/2020-08-03-redux-like-architecture-with-swiftui-middleware/header.png
 tags:
   - development ios swift
@@ -21,11 +21,7 @@ Sure, we could add all that logic and dependencies to our *appReducer*, and make
 
 By definition, Reducers must be *pure functions*—functions that return the exact same output for given inputs, and should also be free of side effects like API calls or asynchronous tasks, so let's introduce the Middleware concept.
 
----
-
 > This project is based on the code we wrote in the [previous post]({{ site.url }}/redux-like-architecture-with-swiftui-basics/).  Before starting, grab a clean copy from [this repository.](https://github.com/afterxleep/Redux-Architecture-SwiftUI-Basics)
-
----
 
 ## Middlewares
 In Redux, a Middleware is an entity (function) that is executed when certain Actions go through the Store.   It receives a copy of the current AppState, performs some operations (API calls, or async tasks), and dispatches a new Action.
@@ -315,14 +311,14 @@ Remember that every Middleware receives a full copy of you app’s state, and ca
 ## Conclusion
 We did a lot of things in this second part of the tutorial and now you have a really robust Architecture, that would allow you to write testable apps in no time.
 
-Check out the resulting app for this post is [the repo](https://github.com/afterxleep/Redux-Architecture-SwiftUI-middleware)., where we will be talking making some improvements in the View Stack and implementing proper error handling, so our users can be informed if something has gone wrong.
+Check out the resulting app for this post is [the repo](https://github.com/afterxleep/Redux-Architecture-SwiftUI-SideEffects)., where we will be talking making some improvements in the View Stack and implementing proper error handling, so our users can be informed if something has gone wrong.
 
 I hope you enjoyed this tutorial.   If you have any questions or comments, feel free to ping me on [Twitter](https://twitter.com/afterxleep).
 
 ---
 Posts in this series
 1. [The Basics]({{ site.url }}/redux-like-architecture-with-swiftui-basics/)
-2. [Side Effects and Middleware functions (This Post)]({{ site.url }}/redux-like-architecture-with-swiftui-middleware/)
+2. [Side Effects (This Post)]({{ site.url }}/redux-like-architecture-with-swiftui-middleware/)
 
 
 ---

@@ -228,9 +228,10 @@ tbody tr:nth-child(odd) th {
 // Blockquote
 blockquote {
   font-weight: 400;
-  padding: 0 0 0 1.4rem;
-  margin: 0 2rem 1rem 0;
+  padding: 0.1em 0.5em 1.2em 1.4rem;
+  margin: 2em 2em 2em 0;
   border-left: .2em solid $blockquote-border-color;
+  background: $blockquote-background-color;
 
   p {
     color: $blockquote-color;

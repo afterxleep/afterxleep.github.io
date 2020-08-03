@@ -252,7 +252,7 @@ That's it!.   Pretty neat, huh?.     There is plenty of room for optimization, a
 
 The resulting app for this post is available in [this repo](https://github.com/afterxleep/Redux-Architecture-SwiftUI-Basics).
 
-On [the next post]({{ site.url }}/redux-like-architecture-with-swiftui-middleware/), we will be improving the app to support Side Effects.
+On [the next post]({{ site.url }}/redux-like-architecture-with-swiftui-middleware/), we will be improving the app to support Side Effects and perform async actions.
 
 I hope you enjoyed this tutorial.   If you have any questions or comments, feel free to ping me on [Twitter](https://twitter.com/afterxleep).
 
@@ -260,7 +260,7 @@ I hope you enjoyed this tutorial.   If you have any questions or comments, feel 
 ---
 Posts in this series
 1. [The Basics (This Post)]({{ site.url }}/redux-like-architecture-with-swiftui-part1/)
-2. [Side Effects and Middleware functions]({{ site.url }}/redux-like-architecture-with-swiftui-middleware/)
+2. [Side Effects]({{ site.url }}/redux-like-architecture-with-swiftui-middleware/)
 
 ---
 Sources & Refs:

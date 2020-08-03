@@ -50,6 +50,7 @@ $table-background-color: $oc-gray-1;
 
 $blockquote-color: $base-lighten-color;
 $blockquote-border-color: $oc-gray-3;
+$blockquote-background-color: $oc-gray-0;
 
 $footnote-link-border-color: $oc-gray-1;
 $footnote-link-background-over-color: $oc-gray-1;
@@ -87,6 +88,8 @@ $li-child-size-ratio: 0.95;
 $dt-width: 180px;
 $dt-dd-space: 20px;
 $dd-position: $dt-width+$dt-dd-space;
+
+
 
 // Mobile breakpoints
 @mixin mobile {
