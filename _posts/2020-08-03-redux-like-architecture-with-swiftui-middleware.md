@@ -169,7 +169,7 @@ With those changes in place we will keep things tidy and clean, when the app gro
 
 This is also a good time to reorganize our functions and Types into different files and groups.  Here’s an example that would work for most small to medium size apps.
 
-[App groups]
+![](/assets/posts/2020-08-03-redux-like-architecture-with-swiftui-middleware/files.png)
 
 ## Implementing our Middleware
 The animalMiddleware will receive a copy of the current State, an Action and a Dispatcher function.   We will be using the new service we’ve created, to fetch an animal, and then simply dispatch a new Action with the name when it becomes available.

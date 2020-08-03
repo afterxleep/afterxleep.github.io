@@ -81,7 +81,7 @@ h6 {
 
 p {
   color: $text-color;
-  margin: 15px 0;
+  margin: 1.5em 0;
 }
 
 a {
@@ -159,6 +159,7 @@ ol {
 }
 
 ol, ul {
+  margin-bottom:$line-height;
   > li {
     margin: 0 auto $li-bottom-space $li-bullets-width;
     line-height: $li-line-height;
@@ -166,6 +167,7 @@ ol, ul {
     > ol,
     > ul {
       margin-top: $li-bottom-space;
+      margin-bottom: $li-bottom-space;
     }
   }
 }
