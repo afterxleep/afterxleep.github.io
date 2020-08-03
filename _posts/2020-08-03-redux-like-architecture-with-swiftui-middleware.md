@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: Redux-like architecture with SwiftUI&#58; Side Effects, Middleware & Combine
-image: /posts/2020-07-30-redux-like-architecture-with-swiftui-basics/header.png
+image: /posts/2020-08-03-redux-like-architecture-with-swiftui-middleware/header.png
 tags:
   - development ios swift
 ---
@@ -278,7 +278,7 @@ func animalReducer(state: inout AnimalState, action: AnimalAction) -> Void {
 
 As you can see, I’m just modifying our state when that actions arrives.  Now try and run the app again, and you should get something like this:
 
-<img src="/assets/posts/2020-08-03-redux-like-architecture-with-swiftui-part2/result.gif" width="400">
+<img src="/assets/posts/2020-08-03-redux-like-architecture-with-swiftui-middleware/result.gif" width="400">
 
 ## The Power of Middlewares
 Having Middlewares in place, allows us to do all sorts of things in the application, as we can easily intercept any action that passes through our Store.
