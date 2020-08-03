@@ -315,7 +315,7 @@ Remember that every Middleware receives a full copy of you app’s state, and ca
 ## Conclusion
 We did a lot of things in this second part of the tutorial and now you have a really robust Architecture, that would allow you to write testable apps in no time.
 
-Check out the resulting app for this post is [the repo](https://github.com/afterxleep/Redux-Architecture-SwiftUI-Part2)., where we will be talking making some improvements in the View Stack and implementing proper error handling, so our users can be informed if something has gone wrong.
+Check out the resulting app for this post is [the repo](https://github.com/afterxleep/Redux-Architecture-SwiftUI-middleware)., where we will be talking making some improvements in the View Stack and implementing proper error handling, so our users can be informed if something has gone wrong.
 
 I hope you enjoyed this tutorial.   If you have any questions or comments, feel free to ping me on [Twitter](https://twitter.com/afterxleep).
 
