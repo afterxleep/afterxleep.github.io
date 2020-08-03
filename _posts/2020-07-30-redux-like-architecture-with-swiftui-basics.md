@@ -1,8 +1,8 @@
 ---
 layout: post
 comments: true
-title: Redux-like architecture with SwiftUI and Combine - Part 1
-image: /posts/2020-07-30-redux-like-architecture-with-swiftui-part1/header.png
+title: Redux-like architecture with SwiftUI&#58; Basics
+image: /posts/2020-07-30-redux-like-architecture-with-swiftui-basics/header.png
 tags:
   - development ios swift
 ---
@@ -19,7 +19,7 @@ Redux architecture is about strict, unidirectional data flow.  All data in the a
 With Redux (and Flux), all the data in your app follows a single direction, and it's kept at the same place (the App State), which is the single point of truth.  Check out the data flow below.
 
 #### Data Flow
-![](/assets/posts/2020-07-30-redux-like-architecture-with-swiftui-part1/diagram1.png)
+![](/assets/posts/2020-07-30-redux-like-architecture-with-swiftui-basics/diagram1.png)
 
 
 ### Action
@@ -43,12 +43,12 @@ Views have read-only access to the Application State.  This is a huge advantage 
 In Redux, the only way to update the State is through a dispatcher, which you can call from the views, based on user interaction like the tap of a button or typing on a text field.  (As you can see in the diagram below)
 
 #### Data Flow (Dispatching from a View)
-![](/assets/posts/2020-07-30-redux-like-architecture-with-swiftui-part1/diagram2.png)
+![](/assets/posts/2020-07-30-redux-like-architecture-with-swiftui-basics/diagram2.png)
 
 ---
 
 ## Let's get to iOS
-For his example, we will be re-building the same animal name generator from the [last Combine and protocols post](https://danielbernal.co/combine-and-protocols-in-swift/) using an interpretation of the Redux architecture.
+For his example, we will be re-building the same animal name generator from the [last Combine and protocols post]({{ site.url }}/combine-and-protocols-in-swift/) using an interpretation of the Redux architecture.
 
 
 #### The final result
@@ -62,7 +62,7 @@ I will be using Xcode 12, (currently in Beta), and creating a new app with the n
 
 To create the app, select these options.
 
-![](/assets/posts/2020-07-30-redux-like-architecture-with-swiftui-part1/xcode.png)
+![](/assets/posts/2020-07-30-redux-like-architecture-with-swiftui-basics/xcode.png)
 
 ---
 
@@ -250,9 +250,17 @@ struct ContentView_Previews: PreviewProvider {
 
 That's it!.   Pretty neat, huh?.     There is plenty of room for optimization, and we will follow up with this in our next post.   
 
-Check out the resulting app for this post is [the repo](https://github.com/afterxleep/Redux-Architecture-SwiftUI-Part1) and keep tuned for Part 2, where we will be talking about tweaking our Store to support asynchronous operations, middlewares and Combine!.
+The resulting app for this post is available in [this repo](https://github.com/afterxleep/Redux-Architecture-SwiftUI-Basics).
+
+On [the next post]({{ site.url }}/redux-like-architecture-with-swiftui-middleware/), we will be improving the app to support Side Effects.
 
 I hope you enjoyed this tutorial.   If you have any questions or comments, feel free to ping me on [Twitter](https://twitter.com/afterxleep).
+
+
+---
+Posts in this series
+1. [The Basics (This Post)]({{ site.url }}/redux-like-architecture-with-swiftui-part1/)
+2. [Side Effects, Middleware & Combine]({{ site.url }}/redux-like-architecture-with-swiftui-middleware/)
 
 ---
 Sources & Refs:
