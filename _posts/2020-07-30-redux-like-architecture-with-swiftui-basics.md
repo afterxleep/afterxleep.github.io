@@ -260,7 +260,7 @@ I hope you enjoyed this tutorial.   If you have any questions or comments, feel 
 ---
 Posts in this series
 1. [The Basics (This Post)]({{ site.url }}/redux-like-architecture-with-swiftui-part1/)
-2. [Side Effects, Middleware & Combine]({{ site.url }}/redux-like-architecture-with-swiftui-middleware/)
+2. [Side Effects and Middleware functions]({{ site.url }}/redux-like-architecture-with-swiftui-middleware/)
 
 ---
 Sources & Refs:

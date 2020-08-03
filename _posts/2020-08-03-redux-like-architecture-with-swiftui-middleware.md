@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: Redux-like architecture with SwiftUI&#58; Side Effects, Middleware & Combine
+title: Redux-like architecture with SwiftUI&#58; Side Effects and Middleware functions
 image: /posts/2020-08-03-redux-like-architecture-with-swiftui-middleware/header.png
 tags:
   - development ios swift
@@ -322,7 +322,7 @@ I hope you enjoyed this tutorial.   If you have any questions or comments, feel 
 ---
 Posts in this series
 1. [The Basics]({{ site.url }}/redux-like-architecture-with-swiftui-basics/)
-2. [Side Effects, Middleware & Combine (This Post)]({{ site.url }}/redux-like-architecture-with-swiftui-middleware/)
+2. [Side Effects and Middleware functions (This Post)]({{ site.url }}/redux-like-architecture-with-swiftui-middleware/)
 
 
 ---
