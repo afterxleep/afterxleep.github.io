@@ -31,9 +31,9 @@ Middlewares take care of all the heavy load in the background (like API call, da
 #### AppStore.swift
 ```swift
 import Foundation
+import Combine
 
-typealias Dispatcher<Action> = (Action) -> Void
-typealias Middleware<State, Action> = (State, Action, @escaping Dispatcher<Action>) -> Void
+typealias Middleware<State, Action> = (State, Action) -> AnyPublisher<Action, Never>?
 typealias AppStore = Store<AppState, AppAction>
 
 final class Store<State, Action>: ObservableObject {
@@ -41,8 +41,13 @@ final class Store<State, Action>: ObservableObject {
     // Read only access to app state
     @Published private(set) var state: State
 
+    var tasks = [AnyCancellable]()
+
+    let serialQueue = DispatchQueue(label: "redux.serial.queue")
+
     private let reducer: Reducer<State, Action>
     let middlewares: [Middleware<State, Action>]
+    private var middlewareCancellables: Set<AnyCancellable> = []
 
     init(initialState: State,
          reducer: @escaping Reducer<State, Action>,
@@ -56,17 +61,23 @@ final class Store<State, Action>: ObservableObject {
     func dispatch(_ action: Action) {
         reducer(&state, action)
 
-        middlewares.forEach { middleware in
-            middleware(state, action, dispatch)
+        // Dispatch all middleware functions        
+        for mw in middlewares {
+            guard let middleware = mw(state, action) else {
+                break
+            }
+            middleware
+                .receive(on: DispatchQueue.main)
+                .sink(receiveValue: dispatch)
+                .store(in: &middlewareCancellables)
         }
     }
 }
 ```
 
-I’ve created a couple new type aliases to define our Middleware and Dispatcher functions, and then added a Middleware array to our Store.  
-This allows us to inject as many Middleware functions as we need on initialization.
+I’ve created a new typealias to define our Middleware, and then added a Middleware array to our Store.  This allows us to inject as many Middleware functions as we need on initialization.
 
-Then, I’ve modified our dispatch function to iterate on the available Middlewares.   Each Middleware will receive a copy of our State, and action and the dispatch function.  Based on the action, it will then execute the tasks we need and dispatch a new action with the result.
+Then, I’ve modified our dispatch function to iterate on the available Middlewares.   Each Middleware will receive a copy of our State and an Action, and will return a Combine Publisher containing a new Action, which will be dispatched upon reception.
 
 So now, instead of generating animal names in our reducer, let’s go asynchronous and create a Service that simulates a network call, by generating an animal name after X(random) number of seconds.
 
@@ -168,7 +179,7 @@ This is also a good time to reorganize our functions and Types into different fi
 ![](/assets/posts/2020-08-03-redux-like-architecture-with-swiftui-middleware/files.png)
 
 ## Implementing our Middleware
-The animalMiddleware will receive a copy of the current State, an Action and a Dispatcher function.   We will be using the new service we’ve created, to fetch an animal, and then simply dispatch a new Action with the name when it becomes available.
+The animalMiddleware will receive a copy of the current State and an Action and returns a Publisher.   We will be using the new service we’ve created, to fetch an animal, and generate a new Action, that will be sent back for dispatch.
 
 #### AnimalMiddleware.swift
 ``` swift
@@ -177,23 +188,27 @@ import Combine
 
 func animalMiddleware(service: AnimalService) -> Middleware<AppState, AppAction> {
 
-    var cancellables: Set<AnyCancellable> = []
-
-    return { state, action, dispatch in
+    return { state, action in
         switch action {
-            case .animal(action: .fetchAnimal):
-                service.generateAnimalInTheFuture()
-                    .sink { dispatch( .animal(action: .setCurrentAnimal(animal: $0))) }
-                    .store(in: &cancellables)
+
+            case .animal(.fetchAnimal):
+                return service.generateAnimalInTheFuture()
+                    .subscribe(on: DispatchQueue.main)
+                    .map { AppAction.animal(action: .setCurrentAnimal(animal: $0 )) }
+                    .eraseToAnyPublisher()
+
             default:
                 break
             }
-        }
 
+        return Empty().eraseToAnyPublisher()
+    }
 }
 ```
 
 Pretty neat, huh?. Since we are using Combine, there is no need for callbacks or weird tricks to handle asynchronous operations and as our application grows, we can add more cases to our Middleware to intercept other actions.
+
+Thanks to combine, we can map over the resulting data, and dynamically generate an Action.
 
 Now let’s modify our Store initializer to inject our Middleware as a dependency.
 
@@ -283,12 +298,15 @@ For example, creating a Middleware, that Logs every action to the console is as 
 
 ``` swift
 import Foundation
+import Combine
 
 func logMiddleware() -> Middleware<AppState, AppAction> {
 
-    return { state, action, dispatch in
-        print(“Triggered action: \(action)”)
+    return { state, action in
+        print("Triggered action: \(action)")
+        return Empty().eraseToAnyPublisher()
     }
+
 
 }
 ```
@@ -307,6 +325,15 @@ let store = AppStore(initialState: .init(
 ```
 
 Remember that every Middleware receives a full copy of you app’s state, and can trigger whatever action you need, so possibilities are limitless.
+
+## Note on Side Effects, Middlewares and Thread
+This approach allows us to add as many Middlewares we need, but you need to consider that everything we are doing is asynchronous. All middlewares run at the same time, with an identical copy of the current state.  
+
+Given that we will have multiple threads running in parallel, you should pay special attention to what you do with middleware.  In general, you *should avoid* intercepting the same Action in different Middlewares, as there is no thread synchronization between them.
+
+A way to fix this issue will be running our Middlewares in sequence, with each one waiting for the previous one to complete, but that also impacts performance.  
+
+Perhaps there's good material there for another post.
 
 ## Conclusion
 We did a lot of things in this second part of the tutorial and now you have a really robust Architecture, that would allow you to write testable apps in no time.
