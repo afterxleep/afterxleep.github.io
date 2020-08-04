@@ -242,7 +242,7 @@ struct ContentView_Previews: PreviewProvider {
 }
 ```
 
-In essence, we’ve are injecting our new AnimalState and the Middleware in the initializer.  This approach makes our code really easy to test
+In essence, we are injecting our new AnimalState and the Middleware in the initializer.  This approach makes our code really easy to test
 
 We’ve also changed the dispatch call in our initializer to match the changes we did to our Store.
 
