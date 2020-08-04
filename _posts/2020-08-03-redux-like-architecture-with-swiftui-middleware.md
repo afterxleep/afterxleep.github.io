@@ -329,7 +329,7 @@ Remember that every Middleware receives a full copy of you app’s state, and ca
 ## Note on Side Effects, Middlewares and Thread Safety
 This approach allows us to add as many Middlewares we need, but you need to consider that everything we are doing is asynchronous. All middlewares run at the same time, with an identical copy of the current state.  
 
-Given that we will have multiple threads running in parallel, you should pay special attention to what you do with middleware.  In general, you *should avoid* intercepting the same Action in different Middlewares, as there is no thread synchronization between them.
+Given that we will have multiple threads running in parallel, you should pay special attention to what you do at middleware level.  In general, you **should avoid** intercepting the same Action in different Middlewares, as there is no thread synchronization between them, and you will certainly face some race conditions.
 
 A way to fix this issue will be running our Middlewares in sequence, with each one waiting for the previous one to complete, but that also impacts performance.  
 
