@@ -326,7 +326,7 @@ let store = AppStore(initialState: .init(
 
 Remember that every Middleware receives a full copy of you app’s state, and can trigger whatever action you need, so possibilities are limitless.
 
-## Note on Side Effects, Middlewares and Thread
+## Note on Side Effects, Middlewares and Thread Safety
 This approach allows us to add as many Middlewares we need, but you need to consider that everything we are doing is asynchronous. All middlewares run at the same time, with an identical copy of the current state.  
 
 Given that we will have multiple threads running in parallel, you should pay special attention to what you do with middleware.  In general, you *should avoid* intercepting the same Action in different Middlewares, as there is no thread synchronization between them.
