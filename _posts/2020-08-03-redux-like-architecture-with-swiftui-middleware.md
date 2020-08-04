@@ -208,7 +208,7 @@ func animalMiddleware(service: AnimalService) -> Middleware<AppState, AppAction>
 
 Pretty neat, huh?. Since we are using Combine, there is no need for callbacks or weird tricks to handle asynchronous operations and as our application grows, we can add more cases to our Middleware to intercept other actions.
 
-Thanks to combine, we can map over the resulting data, and dynamically generate an Action.
+It also helps map over the resulting data, and dynamically generate an Action to be dispatched.
 
 Now let’s modify our Store initializer to inject our Middleware as a dependency.
 
