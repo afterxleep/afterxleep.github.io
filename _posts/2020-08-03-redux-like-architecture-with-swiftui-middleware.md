@@ -7,7 +7,7 @@ tags:
   - development ios swift
 ---
 
-In the [previous post]({{ site.url }}/redux-like-architecture-with-swiftui-basics/) we went through setting up the basic architecture for an iOS a Redux-like approach, and now we will be following up with additional optimizations and support for asynchronous functions or side effects.<!--more-->
+In the [previous post]({{ site.url }}/redux-like-architecture-with-swiftui-basics/) we went through setting up the basic architecture for iOS with Redux-like approach, and now we will be following up with additional optimizations and support for asynchronous functions or side effects.<!--more-->
 
 So far, our app is aligned with Redux three principles:
 
