@@ -76,6 +76,10 @@ struct AnimalState {
 }
 ```
 
+Changes:
+- *currentAnimal* is now *current*
+
+
 And since we’ve added new State variables, we would also need to create the corresponding Actions.  
 
 #### AnimalAction.swift
@@ -88,6 +92,12 @@ enum AnimalAction {
     case fetchError(error: Error?)
 }
 ```
+
+Changes:
+-  *fetchAnimal* is now *fetch*
+-  *setCurrentAnimal* is now *fetchComplete*
+-  New action added *fetchError*
+
 
 Then change the switch statement in the animalReducer:
 
@@ -310,7 +320,7 @@ func animalReducer(state: inout AnimalState, action: AnimalAction) -> Void {
 
         case .fetchError(let error):
             state.fetchInProgress = false
-            state.fetchError = ""
+            state.fetchError = nil
 
     }
 }
@@ -321,7 +331,7 @@ We are getting there!
 <img src="/assets/posts/2020-08-07-redux-like-architecture-with-swiftui-error-handling/result2.gif" width="400">
 
 
-#### Alert Window
+### Alert Window
 So far, we have decent error handling, but things can be a lot better.
 Let’s stop displaying errors in the Label and show an Alert with details instead.
 
@@ -329,7 +339,7 @@ To present an Alert in SwiftUI, you have to use some view’s State property (a 
 
 In this case, we want to display an Alert based on whether the *FetchError* variable in our State is different than *nil*, so there a couple of things to consider.
 
-1. Our State variable is not a Boolean (It’s a String), so we’ll need to add some logic.
+1. Our State variable is not a Boolean (It’s an String), so we’ll need to add some logic.
 2. We cannot use the *fetchError* variable directly because the State is read-only (remember?), and therefore the Alert dismiss action cannot change it.   That means we will have to dispatch an Action to reset it via a custom Binding.
 
 Here’s how:
@@ -383,8 +393,6 @@ Note that in the custom binding *set* parameter, we ignore whatever value comes 
 
 We are getting closer now.  Now let’s modify the Actions we are dispatching from the AnimalMiddleware when there’s an error.
 
-This is how it looks:
-
 #### AnimalMiddleware.swift
 ``` swift
 enum AnimalMiddlewareError: Error {
@@ -420,9 +428,9 @@ func animalMiddleware(service: AnimalService) -> Middleware<AppState, AppAction>
 }
 ```
 
-I have created a new AnimalMiddlewareError type to define additional error types we may need later on and then simply modified our catch statement to return them accordingly.
+I have created a new *AnimalMiddlewareError* type to define additional error types we may need later on and then simply modified our catch statement to return them accordingly.
 
-Now let's update the Reducer to mutate the state based on each error.
+And finally, let's update the Reducer to mutate the state based on each error.
 
 #### AnimalReducer.swift
 ``` swift
