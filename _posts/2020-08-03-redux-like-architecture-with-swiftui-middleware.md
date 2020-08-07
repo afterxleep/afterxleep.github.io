@@ -338,7 +338,7 @@ Perhaps there's good material there for another post.
 ## Conclusion
 We did a lot of things in this second part of the tutorial and now you have a really robust Architecture, that would allow you to write testable apps in no time.
 
-Check out the resulting app for this post is [the repo](https://github.com/afterxleep/Redux-Architecture-SwiftUI-SideEffects)., where we will be talking making some improvements in the View Stack and implementing proper error handling, so our users can be informed if something has gone wrong.
+Check out the resulting app for this post is [the repo](https://github.com/afterxleep/Redux-Architecture-SwiftUI-SideEffects)., where we will be implementing proper error handling, so our users can be informed if something has gone wrong.
 
 I hope you enjoyed this tutorial.   If you have any questions or comments, feel free to ping me on [Twitter](https://twitter.com/afterxleep).
 
@@ -346,6 +346,7 @@ I hope you enjoyed this tutorial.   If you have any questions or comments, feel 
 Posts in this series
 1. [The Basics]({{ site.url }}/redux-like-architecture-with-swiftui-basics/)
 2. Side Effects (This Post)
+3. [Error Handling]({{ site.url }}/redux-like-architecture-with-swiftui-error-handling/)
 
 
 ---
