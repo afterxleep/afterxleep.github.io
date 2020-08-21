@@ -347,7 +347,7 @@ Posts in this series
 1. [The Basics]({{ site.url }}/redux-like-architecture-with-swiftui-basics/)
 2. Side Effects (This Post)
 3. [Error Handling]({{ site.url }}/redux-like-architecture-with-swiftui-error-handling/)
-
+4. [Real World App]({{ site.url }}/redux-like-architecture-with-swiftui-real-world-app/)
 
 ---
 
