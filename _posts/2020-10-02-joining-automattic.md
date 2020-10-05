@@ -30,7 +30,7 @@ In the past 180+ days, I applied to more than 200 positions worldwide, hearing b
 
 When I mention those numbers, people think I applied to every LinkedIn post I found, but in reality, I reviewed thousands of posts and applied only to the ones that matched my list.
 
-There were almost no good opportunities in Colombia, so 96% of the applications I sent were for jobs abroad, requiring VISA sponsorship, all in the middle of the pandemic with the world on a travel ban.  It was a long shot, but what I learn was unimaginable.
+There were almost no good opportunities in Colombia, so 96% of the applications I sent were for jobs abroad, requiring VISA sponsorship, all in the middle of the pandemic with the world on a travel ban.  It was a long shot, but what I learned was unimaginable.
 
 I interviewed with companies in Germany, Canada, Spain, Argentina, Uruguay, the U.S., and the Netherlands.  Some conversations went sideways,  and I advanced to the last steps of the process on a few others but didn't get hired or decided not to accept at the end.
 
