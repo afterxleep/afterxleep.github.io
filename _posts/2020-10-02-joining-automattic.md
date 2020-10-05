@@ -11,7 +11,7 @@ Most of my recent experience is in IT Consulting firms, where you usually get th
 
 IT Services in general, it's about either "Table Turnover" (as in, you want customers to sit down, eat, pay and move along so that you can serve more), or "Fast Growth" (as in, put more people to work for others and sell more of their time).  It's all about making money. (Not saying it's bad, by the way)
 
-Still, it was fun.  I had the chance to work and meet great people from all over the world and work on all kinds of projects, but eventually, my work became about solving the same set of problems for different customers, several times.  Politics and endless meetings started to creep in, and I stopped learning, so I wrote a list of requirements for my next job and left.
+Still, it was fun.  I had the chance to meet great people and work on all kinds of projects, but eventually, my day to day became about solving the same set of problems for different customers.  Politics and endless meetings started to creep in, and I stopped learning, so I wrote a list of requirements for my next job and left.
 
 Here is the list: (After a few permutations)
 
