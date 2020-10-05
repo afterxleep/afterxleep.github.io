@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: I'm joining Automattic
+title: I'm joining Automattic!
 image: /posts/2020-10-02-joining-automattic/header.png
 tags:
   - updates
