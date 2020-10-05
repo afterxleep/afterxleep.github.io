@@ -45,4 +45,4 @@ I will be joining Automattic as a Mobile Engineer next week.  Going back to codi
 I'll keep you posted on how it goes.
 
 ---
-**EDIT:**  Many people have asked me about the hiring process in detail, so I'll try to follow up with another post on this later on.
+**EDIT:**  Many people have asked me about the hiring process in detail.  There´s plenty of info around the web, but I might write a follow up with my perspective.
