@@ -40,7 +40,7 @@ I know Automattic since my early days as a Web Developer.  Besides developing [W
 
 [The hiring process](https://automattic.com/work-with-us/how-we-hire-developers/) is demanding and requires lots of work and commitment, but to me, it was also a great learning opportunity, full of pleasant surprises.  It has been, by far, the most bizarre, exciting, and joyful process I have ever participated in. (Yea, it's true: everything happens on Slack).
 
-I will be joining Automattic as a Mobile Engineer as part of the Tumblr iOS team.  Going back to coding full time will be a challenge, mainly because these guys are incredibly good at it, and I'm a little old and rusty, but life's boring when things are too easy anyway, so bring it on!.
+I will be joining Automattic as a Mobile Engineer next week.  Going back to coding full time will be a challenge, mainly because these guys are incredibly good at it, and I'm a little old and rusty, but life's boring when things are too easy anyway, so bring it on!.
 
 I'll keep you posted on how it goes.
 
