@@ -34,7 +34,7 @@ There were almost no good opportunities in Colombia, so 96% of the applications 
 
 I interviewed with companies in Germany, Canada, Spain, Argentina, Uruguay, the U.S., and the Netherlands.  Some conversations went sideways,  and I advanced to the last steps of the process on a few others but didn't get hired or decided not to accept at the end.
 
-What's most curious is that I did not find about [Automattic](https://automattic.com) open positions on a job board.  Instead,  I was reading [Matt Mullenweg's "Corner Office" article in NYT](https://www.nytimes.com/2020/07/12/business/matt-mullenweg-automattic-corner-office.html) where he talked about Automattic's hiring process a bit, and I got curious enough to check out their openings.
+What's most curious is that I did not find about [Automattic](https://automattic.com) open positions on a job board.  Instead,  I was reading [Matt Mullenweg's "Corner Office" article in the NYT](https://www.nytimes.com/2020/07/12/business/matt-mullenweg-automattic-corner-office.html) where he talked about Automattic's hiring process a bit, and got curious enough to check out their openings.
 
 I know Automattic since my early days as a Web Developer.  Besides developing [WordPress](http://wordpress.com), they are the company behind [Tumblr](http://tumblr.com) and [Simplenote](https://simplenote.com) (among others) and have been in business for 15 years.   It's a fully remote shop, with 1000+ people spread across 70+ countries, trying to make the web a better place, and it seems it works.
 
