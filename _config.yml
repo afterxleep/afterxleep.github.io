@@ -73,6 +73,7 @@ baseurl:
 # !! You don't need to change any of the configuration flags below !!
 #
 
+
 permalink: /:title/
 paginate_path: /page:num/
 
@@ -110,4 +111,3 @@ excerpt_separator: <!--more-->
 future: false
 
 highlighter: rouge
-
