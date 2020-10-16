@@ -8,7 +8,7 @@ permalink: /about/
 
 I have been writing software since the late 90s and fell in love with iOS development after the iPhone launch in 2007.  Since then, I've been writing iOS apps most of the time, but I also enjoy writing Javascript and putting things online.
 
-During the day, I consult as Product & Development Director for <i>Appetit</i>, a startup that I founded in 2017 and go out for mid-day Mountain Bike rides, and at night, I take on cool mobile freelance gigs.
+During the day, I write code at <a href="https://automattic.com">Automattic</a> and go out for mid-day Mountain Bike rides, and at night, I take on cool personal projects and experiments.
 
 I'm always available at [Twitter](http://www.twitter.com/afterxleep), and frequently pushing bits to one of my [Github repos](http://github.com/afterxleep).
 
